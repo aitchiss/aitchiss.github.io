@@ -17,4 +17,9 @@
   list-style: none;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+}
+
+.header ul li{
+  padding: 10px;
 }
