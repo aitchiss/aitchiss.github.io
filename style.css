@@ -11,13 +11,14 @@
 .header img{
   width: 140px;
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .header ul{
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 .header ul li{
