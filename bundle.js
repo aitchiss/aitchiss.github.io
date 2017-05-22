@@ -22111,33 +22111,42 @@ var Header = function Header() {
     "div",
     { className: "header" },
     _react2.default.createElement(
-      "h1",
-      null,
-      "Suzanne Aitchison"
-    ),
-    _react2.default.createElement(
-      "h3",
-      null,
-      "Software Developer"
-    ),
-    _react2.default.createElement(
-      "ul",
-      { className: "nav" },
+      "div",
+      { className: "header-text" },
       _react2.default.createElement(
-        "li",
+        "h1",
         null,
-        "GitHub"
+        "Suzanne Aitchison"
       ),
       _react2.default.createElement(
-        "li",
+        "h3",
         null,
-        "LinkedIn"
+        "Software Developer"
       ),
       _react2.default.createElement(
-        "li",
-        null,
-        "Email"
+        "ul",
+        { className: "nav" },
+        _react2.default.createElement(
+          "li",
+          null,
+          "GitHub"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          "LinkedIn"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          "Email"
+        )
       )
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "header-img" },
+      _react2.default.createElement("img", { src: "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAA3bAAAAJDZhZWRiY2NjLTFkYmMtNDE5Ni04MTQ4LWMwM2FhZGYyMjk4YQ.jpg" })
     )
   );
 };
