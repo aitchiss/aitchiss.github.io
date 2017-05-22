@@ -5,5 +5,16 @@
 .header{
   display: flex;
   justify-content: center;
-  color: red;
+  margin-top: 30px;
+}
+
+.header img{
+  width: 100px;
+}
+
+.header ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
