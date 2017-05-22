@@ -22095,6 +22095,10 @@ module.exports = traverseAllChildren;
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _react = __webpack_require__(50);
 
 var _react2 = _interopRequireDefault(_react);
@@ -22137,6 +22141,8 @@ var Header = function Header() {
     )
   );
 };
+
+exports.default = Header;
 
 /***/ })
 /******/ ]);
