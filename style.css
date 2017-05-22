@@ -31,13 +31,14 @@
 
 .about-text{
   margin-right: 40px;
+  width: 450px;
 }
 
 .about-projects{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 420px;
+  width: 450px;
 }
 
 .project{
