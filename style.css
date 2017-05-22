@@ -23,7 +23,26 @@
   padding-left: 0;
 }
 
+.about-section{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.about-text{
+  margin-right: 40px;
+}
+
+.about-projects{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 420px;
+}
+
 .project{
+  height: 140px;
+  width: 140px;
   border: 1px solid black;
 }
 
