@@ -19,8 +19,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  list-style-type: none;
 }
 
-.header ul li{
-  padding: 10px;
-}
+
