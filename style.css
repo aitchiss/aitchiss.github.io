@@ -9,12 +9,13 @@
 }
 
 .header img{
-  width: 100px;
+  width: 140px;
+  margin-top: 20px
 }
 
 .header ul{
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
