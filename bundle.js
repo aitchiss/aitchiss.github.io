@@ -9530,6 +9530,10 @@ var _react = __webpack_require__(50);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Header = __webpack_require__(183);
+
+var _Header2 = _interopRequireDefault(_Header);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9554,7 +9558,7 @@ var Main = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(Header, null)
+        _react2.default.createElement(_Header2.default, null)
       );
     }
   }]);
@@ -22083,6 +22087,56 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 183 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(50);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Header = function Header() {
+
+  return _react2.default.createElement(
+    "div",
+    { className: "header" },
+    _react2.default.createElement(
+      "h1",
+      null,
+      "Suzanne Aitchison"
+    ),
+    _react2.default.createElement(
+      "h3",
+      null,
+      "Software Developer"
+    ),
+    _react2.default.createElement(
+      "ul",
+      { className: "nav" },
+      _react2.default.createElement(
+        "li",
+        null,
+        "GitHub"
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        "LinkedIn"
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        "Email"
+      )
+    )
+  );
+};
 
 /***/ })
 /******/ ]);
