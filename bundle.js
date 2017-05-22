@@ -9534,6 +9534,10 @@ var _Header = __webpack_require__(183);
 
 var _Header2 = _interopRequireDefault(_Header);
 
+var _AboutSection = __webpack_require__(184);
+
+var _AboutSection2 = _interopRequireDefault(_AboutSection);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9545,10 +9549,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Main = function (_React$Component) {
   _inherits(Main, _React$Component);
 
-  function Main() {
+  function Main(props) {
     _classCallCheck(this, Main);
 
-    return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+
+    _this.state = {
+      projects: ['animalShelter', 'workoutPlanner', 'iDrinkies', 'hooses', 'starWars', 'battleships']
+    };
+    return _this;
   }
 
   _createClass(Main, [{
@@ -9558,7 +9567,8 @@ var Main = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(_Header2.default, null)
+        _react2.default.createElement(_Header2.default, null),
+        _react2.default.createElement(_AboutSection2.default, { projects: this.state.projects })
       );
     }
   }]);
@@ -22152,6 +22162,51 @@ var Header = function Header() {
 };
 
 exports.default = Header;
+
+/***/ }),
+/* 184 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(50);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AboutSection = function AboutSection(props) {
+
+  var projectDivs = props.projects.map(function (project, index) {
+    return _react2.default.createElement("div", { className: "project", id: project, key: index });
+  });
+
+  return _react2.default.createElement(
+    "div",
+    { className: "about-section" },
+    _react2.default.createElement(
+      "div",
+      { className: "about-text" },
+      _react2.default.createElement(
+        "p",
+        null,
+        "Placeholder text"
+      )
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "about-projects" },
+      projectDivs
+    )
+  );
+};
+
+exports.default = AboutSection;
 
 /***/ })
 /******/ ]);
