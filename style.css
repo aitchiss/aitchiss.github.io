@@ -1,20 +1,32 @@
-*{
-  font-family: 'Roboto', sans-serif;
+body{
+  font-family: 'Raleway', sans-serif;
+  background-color: #ECEFF1;
+}
+
+.header h1{
+  font-family: 'Roboto Slab', serif;
 }
 
 .header{
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  background-color: #263238;
+  color: white;
 }
 
 .header img{
   width: 140px;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 20px;
+  border-radius: 100px;
 }
 
-.header ul{
+.header-text{
+  margin-right: 40px;
+  margin-top: 15px;
+}
+
+ul{
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -26,25 +38,94 @@
 .about-section{
   display: flex;
   flex-wrap: wrap;
-
+  margin-top: 40px;
+  justify-content: space-around;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+
 
 .about-text{
-  margin-right: 40px;
-  width: 450px;
+  width: 500px;
 }
 
-.about-projects{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 450px;
+
+.grid-header{
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+  grid-area: header;
+  border: 2px solid  #0277BD;
+  font-weight: bold;
+  color: #0277BD;
+  width: 315px;
+  border-radius: 5px;
 }
+
+.grid-header p{
+  margin-top: 40px;
+  text-align: center;
+}
+
+#animalShelter{
+  grid-area: animalShelter;
+  background-color: #EA1E63;
+}
+
+#workoutPlanner{
+  grid-area: workoutPlanner;
+  background-color: #9C28B1;
+}
+
+#iDrinkies{
+  grid-area: iDrinkies;
+  background-color: #00BCD5;
+}
+
+#hooses{
+  grid-area: hooses;
+  width: 315px;
+  background-color: #FEC107;
+}
+
+#starWars{
+  grid-area: starWars;
+  background-color: #019587;
+}
+
+#battleships {
+  grid-area: battleships;
+  background-color: #673BB7;
+}
+
+
+
+.grid-container{
+  display: grid;
+  grid-gap: 10px 5px;
+  grid-template-areas: 
+      "header header workoutPlanner"
+      "battleships iDrinkies animalShelter"
+      "starWars hooses hooses";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: [row1-start] 120px [row1-end] 120px [third-line] 120px;
+ 
+}
+
 
 .project{
-  height: 140px;
-  width: 140px;
-  border: 1px solid black;
+  height: 120px;
+  width: 150px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+.project p{
+  margin-top: 50px;
 }
 
 
