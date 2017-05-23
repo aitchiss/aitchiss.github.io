@@ -9538,6 +9538,10 @@ var _AboutSection = __webpack_require__(83);
 
 var _AboutSection2 = _interopRequireDefault(_AboutSection);
 
+var _ProjectSection = __webpack_require__(185);
+
+var _ProjectSection2 = _interopRequireDefault(_ProjectSection);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9555,7 +9559,7 @@ var Main = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
     _this.state = {
-      projects: ['animalShelter', 'workoutPlanner', 'iDrinkies', 'hooses', 'starWars', 'battleships']
+      projects: [{ name: 'animal shelter', reference: 'animalShelter' }, { name: 'workout planner', reference: 'workoutPlanner' }, { name: 'iDrinkies', reference: 'iDrinkies' }, { name: 'hooses', reference: 'hooses' }, { name: 'Star Wars Planetary Database', reference: 'starWars' }, { name: 'battleships', reference: 'battleships' }]
     };
     return _this;
   }
@@ -9568,7 +9572,8 @@ var Main = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement(_Header2.default, null),
-        _react2.default.createElement(_AboutSection2.default, { projects: this.state.projects })
+        _react2.default.createElement(_AboutSection2.default, { projects: this.state.projects }),
+        _react2.default.createElement(_ProjectSection2.default, null)
       );
     }
   }]);
@@ -9607,14 +9612,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var AboutSection = function AboutSection(props) {
 
+  var moveToProject = function moveToProject() {
+    document.location = "#project-section";
+  };
+
   var projectDivs = props.projects.map(function (project, index) {
     return _react2.default.createElement(
       "div",
-      { className: "project", id: project, key: index },
+      { className: "project", onClick: moveToProject, id: project.reference, key: index },
       _react2.default.createElement(
         "p",
         null,
-        project
+        project.name
       )
     );
   });
@@ -9628,7 +9637,51 @@ var AboutSection = function AboutSection(props) {
       _react2.default.createElement(
         "p",
         null,
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        "I am a Software Developer based in Edinburgh, currently open to employment opportunities having graduated from CodeClan's intensive PDA Software Development course (SCQF Level 8)."
+      ),
+      _react2.default.createElement(
+        "p",
+        null,
+        "I bring a strong user-centred approach to development, and a genuine enthusiasm for delivering excellent user experience."
+      ),
+      _react2.default.createElement(
+        "p",
+        null,
+        "Skills include: "
+      ),
+      _react2.default.createElement(
+        "ul",
+        null,
+        _react2.default.createElement(
+          "li",
+          null,
+          "Programming languages including JavaScript, Java, Ruby"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          "Experience with frameworks including React and Ruby on Rails"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          "Utilising and creating RESTful APIs"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          "SQL and noSQL database experience"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          "Strong grounding in OOP and SOLID principles"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          "Test Driven Development"
+        )
       ),
       _react2.default.createElement(
         "ul",
@@ -9636,17 +9689,29 @@ var AboutSection = function AboutSection(props) {
         _react2.default.createElement(
           "li",
           null,
-          "GitHub"
+          _react2.default.createElement(
+            "a",
+            { href: "http://github.com/aitchiss" },
+            _react2.default.createElement("img", { src: "https://image.flaticon.com/icons/png/512/23/23957.png" })
+          )
         ),
         _react2.default.createElement(
           "li",
           null,
-          "LinkedIn"
+          _react2.default.createElement(
+            "a",
+            { href: "https://www.linkedin.com/in/suzanne-aitchison-59aa2838/" },
+            _react2.default.createElement("img", { src: "http://icons.iconarchive.com/icons/icons8/windows-8/512/Social-Networks-Linkedin-icon.png" })
+          )
         ),
         _react2.default.createElement(
           "li",
           null,
-          "Email"
+          _react2.default.createElement(
+            "a",
+            { href: "mailto:suzanne.aitchison@gmail.com" },
+            _react2.default.createElement("img", { id: "email", src: "http://www.iconsfind.com/wp-content/uploads/2015/11/20151104_563973a8dd4e6-210x210.png" })
+          )
         )
       )
     ),
@@ -22224,6 +22289,52 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 185 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(25);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ProjectSection = function (_React$Component) {
+  _inherits(ProjectSection, _React$Component);
+
+  function ProjectSection() {
+    _classCallCheck(this, ProjectSection);
+
+    return _possibleConstructorReturn(this, (ProjectSection.__proto__ || Object.getPrototypeOf(ProjectSection)).apply(this, arguments));
+  }
+
+  _createClass(ProjectSection, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement("div", { id: "project-section" });
+    }
+  }]);
+
+  return ProjectSection;
+}(_react2.default.Component);
+
+exports.default = ProjectSection;
 
 /***/ })
 /******/ ]);

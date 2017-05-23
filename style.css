@@ -26,13 +26,22 @@ body{
   margin-top: 15px;
 }
 
-ul{
+.nav{
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   list-style-type: none;
   padding-left: 0;
+  margin-top: 30px;
+}
+
+.nav img{
+  width: 30px;
+}
+
+#email{
+  width: 35px;
 }
 
 .about-section{
@@ -86,13 +95,13 @@ ul{
 
 #hooses{
   grid-area: hooses;
-  width: 315px;
-  background-color: #FEC107;
+  background-color: #019587;
 }
 
 #starWars{
   grid-area: starWars;
-  background-color: #019587;
+  background-color: #FEC107;
+  width: 315px;
 }
 
 #battleships {
@@ -108,7 +117,7 @@ ul{
   grid-template-areas: 
       "header header workoutPlanner"
       "battleships iDrinkies animalShelter"
-      "starWars hooses hooses";
+      "hooses starWars starWars";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: [row1-start] 120px [row1-end] 120px [third-line] 120px;
  
@@ -126,6 +135,13 @@ ul{
 
 .project p{
   margin-top: 50px;
+}
+
+#project-section{
+
+  border: 1px solid black;
+  height: 100px;
+  width: 100%;
 }
 
 
