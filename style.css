@@ -135,15 +135,13 @@ body{
   margin-top: 50px;
 }
 
-#project-view{
-  border: 1px solid black;
-}
 
 .project-heading{
   font-family: 'Roboto Slab', serif;
   color: white;
   text-align: center;
   height: 100px;
+  padding-top: 15px;
 }
 
 

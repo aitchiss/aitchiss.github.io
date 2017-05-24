@@ -9559,7 +9559,7 @@ var Main = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
     _this.state = {
-      projects: [{ name: 'animal shelter', reference: 'animalShelter' }, { name: 'workout planner', reference: 'workoutPlanner' }, { name: 'iDrinkies', reference: 'iDrinkies' }, { name: 'hooses', reference: 'hooses' }, { name: 'Star Wars Planetary Database', reference: 'starWars' }, { name: 'battleships', reference: 'battleships' }],
+      projects: [{ name: 'animal shelter', reference: 'animalShelter', colour: '#EA1E63' }, { name: 'workout planner', reference: 'workoutPlanner', colour: '#9C28B1' }, { name: 'iDrinkies', reference: 'iDrinkies', colour: '#00BCD5' }, { name: 'hooses', reference: 'hooses', colour: '#019587' }, { name: 'Star Wars Planetary Database', reference: 'starWars', colour: '#FEC107' }, { name: 'battleships', reference: 'battleships', colour: '#673BB7' }],
       currentSelection: null
     };
     return _this;
@@ -9585,7 +9585,7 @@ var Main = function (_React$Component) {
         null,
         _react2.default.createElement(_Header2.default, null),
         _react2.default.createElement(_AboutSection2.default, { projects: this.state.projects, updateSelection: this.updateCurrentSelection.bind(this) }),
-        _react2.default.createElement(_ProjectSection2.default, null)
+        _react2.default.createElement(_ProjectSection2.default, { currentSelection: this.state.currentSelection })
       );
     }
   }]);
@@ -22344,11 +22344,20 @@ var ProjectSection = function (_React$Component) {
   _createClass(ProjectSection, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { id: 'project-view' },
-        _react2.default.createElement(_ProjectHeading2.default, null)
-      );
+
+      if (this.props.currentSelection) {
+        return _react2.default.createElement(
+          'div',
+          { id: 'project-view' },
+          _react2.default.createElement(_ProjectHeading2.default, { title: this.props.currentSelection.name, colour: this.props.currentSelection.colour })
+        );
+      } else {
+        return _react2.default.createElement(
+          'div',
+          { id: 'project-view' },
+          _react2.default.createElement(_ProjectHeading2.default, { title: "select a project above to view details", colour: '#0277BD' })
+        );
+      }
     }
   }]);
 
@@ -22396,11 +22405,11 @@ var ProjectHeading = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         "div",
-        { className: "project-heading" },
+        { className: "project-heading", style: { backgroundColor: this.props.colour } },
         _react2.default.createElement(
           "h1",
           null,
-          "Project Title"
+          this.props.title
         )
       );
     }

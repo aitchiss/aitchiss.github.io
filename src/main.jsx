@@ -8,7 +8,12 @@ class Main extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      projects: [{name: 'animal shelter', reference: 'animalShelter'}, {name: 'workout planner', reference: 'workoutPlanner'}, {name: 'iDrinkies', reference: 'iDrinkies'}, {name: 'hooses', reference: 'hooses'}, {name: 'Star Wars Planetary Database', reference: 'starWars'}, {name: 'battleships', reference: 'battleships'}],
+      projects: [{name: 'animal shelter', reference: 'animalShelter', colour: '#EA1E63'}, 
+      {name: 'workout planner', reference: 'workoutPlanner', colour: '#9C28B1'}, 
+      {name: 'iDrinkies', reference: 'iDrinkies', colour: '#00BCD5'}, 
+      {name: 'hooses', reference: 'hooses', colour: '#019587'}, 
+      {name: 'Star Wars Planetary Database', reference: 'starWars', colour: '#FEC107'}, 
+      {name: 'battleships', reference: 'battleships', colour: '#673BB7'}],
       currentSelection: null
     }
   }
@@ -28,7 +33,7 @@ class Main extends React.Component{
       <div>
         <Header />
         <AboutSection projects={this.state.projects} updateSelection={this.updateCurrentSelection.bind(this)}/>  
-        <ProjectSection />
+        <ProjectSection currentSelection={this.state.currentSelection}/>
       </div>
       )
 
