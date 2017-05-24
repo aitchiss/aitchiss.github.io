@@ -17,7 +17,7 @@ class ProjectSection extends React.Component{
     } else {
       return (
         <div id="project-view">
-          <ProjectHeading title={"select a project above to view details"} colour={'#0277BD'} />
+          <ProjectHeading title={"select a project to view details"} colour={'#0277BD'} />
         </div>
       )
     }

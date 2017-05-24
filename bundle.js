@@ -9635,7 +9635,7 @@ var AboutSection = function AboutSection(props) {
       { className: "project", onClick: moveToProject, id: project.reference, key: index },
       _react2.default.createElement(
         "p",
-        null,
+        { onClick: moveToProject, id: project.reference },
         project.name
       )
     );
@@ -22360,7 +22360,7 @@ var ProjectSection = function (_React$Component) {
         return _react2.default.createElement(
           'div',
           { id: 'project-view' },
-          _react2.default.createElement(_ProjectHeading2.default, { title: "select a project above to view details", colour: '#0277BD' })
+          _react2.default.createElement(_ProjectHeading2.default, { title: "select a project to view details", colour: '#0277BD' })
         );
       }
     }

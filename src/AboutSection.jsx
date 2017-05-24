@@ -8,7 +8,7 @@ const AboutSection = (props) => {
   }
 
   const projectDivs = props.projects.map((project, index) => {
-    return <div className="project" onClick={moveToProject} id={project.reference} key={index}><p>{project.name}</p></div>
+    return <div className="project" onClick={moveToProject} id={project.reference} key={index}><p onClick={moveToProject} id={project.reference}>{project.name}</p></div>
   })
 
 

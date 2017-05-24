@@ -10,7 +10,6 @@ body{
 .top-header{
   display: flex;
   justify-content: center;
-  margin-top: 30px;
   background-color: #263238;
   color: white;
 }
@@ -141,7 +140,7 @@ body{
   color: white;
   text-align: center;
   height: 100px;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 
