@@ -2,8 +2,9 @@ import React from 'react'
 
 const AboutSection = (props) => {
 
-  const moveToProject = () => {
-    document.location ="#project-section"
+  const moveToProject = (e) => {
+    props.updateSelection(e.target.id)
+    document.location ="#project-view"
   }
 
   const projectDivs = props.projects.map((project, index) => {

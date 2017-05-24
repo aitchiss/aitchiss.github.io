@@ -9559,12 +9559,24 @@ var Main = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
     _this.state = {
-      projects: [{ name: 'animal shelter', reference: 'animalShelter' }, { name: 'workout planner', reference: 'workoutPlanner' }, { name: 'iDrinkies', reference: 'iDrinkies' }, { name: 'hooses', reference: 'hooses' }, { name: 'Star Wars Planetary Database', reference: 'starWars' }, { name: 'battleships', reference: 'battleships' }]
+      projects: [{ name: 'animal shelter', reference: 'animalShelter' }, { name: 'workout planner', reference: 'workoutPlanner' }, { name: 'iDrinkies', reference: 'iDrinkies' }, { name: 'hooses', reference: 'hooses' }, { name: 'Star Wars Planetary Database', reference: 'starWars' }, { name: 'battleships', reference: 'battleships' }],
+      currentSelection: null
     };
     return _this;
   }
 
   _createClass(Main, [{
+    key: 'updateCurrentSelection',
+    value: function updateCurrentSelection(reference) {
+      var _this2 = this;
+
+      this.state.projects.forEach(function (project) {
+        if (project.reference === reference) {
+          _this2.setState({ currentSelection: project });
+        }
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
 
@@ -9572,7 +9584,7 @@ var Main = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement(_Header2.default, null),
-        _react2.default.createElement(_AboutSection2.default, { projects: this.state.projects }),
+        _react2.default.createElement(_AboutSection2.default, { projects: this.state.projects, updateSelection: this.updateCurrentSelection.bind(this) }),
         _react2.default.createElement(_ProjectSection2.default, null)
       );
     }
@@ -9612,8 +9624,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var AboutSection = function AboutSection(props) {
 
-  var moveToProject = function moveToProject() {
-    document.location = "#project-section";
+  var moveToProject = function moveToProject(e) {
+    props.updateSelection(e.target.id);
+    document.location = "#project-view";
   };
 
   var projectDivs = props.projects.map(function (project, index) {
@@ -22307,6 +22320,10 @@ var _react = __webpack_require__(25);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _ProjectHeading = __webpack_require__(186);
+
+var _ProjectHeading2 = _interopRequireDefault(_ProjectHeading);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22325,9 +22342,13 @@ var ProjectSection = function (_React$Component) {
   }
 
   _createClass(ProjectSection, [{
-    key: "render",
+    key: 'render',
     value: function render() {
-      return _react2.default.createElement("div", { id: "project-section" });
+      return _react2.default.createElement(
+        'div',
+        { id: 'project-view' },
+        _react2.default.createElement(_ProjectHeading2.default, null)
+      );
     }
   }]);
 
@@ -22335,6 +22356,60 @@ var ProjectSection = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = ProjectSection;
+
+/***/ }),
+/* 186 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(25);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ProjectHeading = function (_React$Component) {
+  _inherits(ProjectHeading, _React$Component);
+
+  function ProjectHeading() {
+    _classCallCheck(this, ProjectHeading);
+
+    return _possibleConstructorReturn(this, (ProjectHeading.__proto__ || Object.getPrototypeOf(ProjectHeading)).apply(this, arguments));
+  }
+
+  _createClass(ProjectHeading, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "project-heading" },
+        _react2.default.createElement(
+          "h1",
+          null,
+          "Project Title"
+        )
+      );
+    }
+  }]);
+
+  return ProjectHeading;
+}(_react2.default.Component);
+
+exports.default = ProjectHeading;
 
 /***/ })
 /******/ ]);

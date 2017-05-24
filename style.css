@@ -63,7 +63,7 @@ body{
 
 
 .grid-header{
-  font-family: 'Roboto Slab', serif;
+  
   font-size: 1.5em;
   grid-area: header;
   border: 2px solid  #0277BD;
@@ -120,7 +120,6 @@ body{
       "hooses starWars starWars";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: [row1-start] 120px [row1-end] 120px [third-line] 120px;
- 
 }
 
 
@@ -130,18 +129,21 @@ body{
   color: white;
   text-align: center;
   border-radius: 5px;
-
 }
 
 .project p{
   margin-top: 50px;
 }
 
-#project-section{
-
+#project-view{
   border: 1px solid black;
+}
+
+.project-heading{
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  text-align: center;
   height: 100px;
-  width: 100%;
 }
 
 
