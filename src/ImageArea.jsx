@@ -10,11 +10,15 @@ class ImageArea extends React.Component{
     }
   }
 
+  handleThumbClick(e){
+    this.setState({currentImage: this.props.currentSelection.photos[e.target.id]})
+  }
+
 
   render(){
 
     const thumbnails = this.props.currentSelection.photos.map((photo, index) => {
-      return <Thumbnail image={photo} key={index} id={photo + '-' + index}/>
+      return <Thumbnail image={photo} key={index} id={index} clickHandler={this.handleThumbClick.bind(this)}/>
     })
 
     return(

@@ -22533,11 +22533,17 @@ var ImageArea = function (_React$Component) {
   }
 
   _createClass(ImageArea, [{
+    key: 'handleThumbClick',
+    value: function handleThumbClick(e) {
+      this.setState({ currentImage: this.props.currentSelection.photos[e.target.id] });
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
 
       var thumbnails = this.props.currentSelection.photos.map(function (photo, index) {
-        return _react2.default.createElement(_Thumbnail2.default, { image: photo, key: index, id: photo + '-' + index });
+        return _react2.default.createElement(_Thumbnail2.default, { image: photo, key: index, id: index, clickHandler: _this2.handleThumbClick.bind(_this2) });
       });
 
       return _react2.default.createElement(
@@ -22584,7 +22590,7 @@ var Thumbnail = function Thumbnail(props) {
   return _react2.default.createElement(
     "div",
     { className: "thumbnail" },
-    _react2.default.createElement("img", { src: props.image, id: props.id })
+    _react2.default.createElement("img", { src: props.image, id: props.id, onClick: props.clickHandler })
   );
 };
 

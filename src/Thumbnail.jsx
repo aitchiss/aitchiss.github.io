@@ -4,7 +4,7 @@ const Thumbnail = (props) => {
 
   return (
     <div className="thumbnail">
-      <img src={props.image} id={props.id} />
+      <img src={props.image} id={props.id} onClick={props.clickHandler}/>
     </div>
   )
 }
