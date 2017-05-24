@@ -143,4 +143,43 @@ body{
   padding-top: 25px;
 }
 
+.project-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 90%;
+}
+
+.images{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.project-info-text{
+  padding-top: 40px;
+  width: 500px;
+}
+
+.thumbs{
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;*/
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+
+.thumbnail img{
+  width: 100px;
+  margin-right: 20px;
+}
+
+.main-image img{
+  width: 500px;
+}
+
 

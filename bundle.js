@@ -9559,7 +9559,7 @@ var Main = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
     _this.state = {
-      projects: [{ name: 'animal shelter', reference: 'animalShelter', colour: '#EA1E63' }, { name: 'workout planner', reference: 'workoutPlanner', colour: '#9C28B1' }, { name: 'iDrinkies', reference: 'iDrinkies', colour: '#00BCD5' }, { name: 'hooses', reference: 'hooses', colour: '#019587' }, { name: 'Star Wars Planetary Database', reference: 'starWars', colour: '#FEC107' }, { name: 'battleships', reference: 'battleships', colour: '#673BB7' }],
+      projects: [{ name: 'animal shelter', reference: 'animalShelter', colour: '#EA1E63', photos: ['https://github.com/aitchiss/animal_shelter/blob/master/documentation/owner_profile.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/animals_index.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/matches_page.png?raw=true'] }, { name: 'workout planner', reference: 'workoutPlanner', colour: '#9C28B1' }, { name: 'iDrinkies', reference: 'iDrinkies', colour: '#00BCD5' }, { name: 'hooses', reference: 'hooses', colour: '#019587' }, { name: 'Star Wars Planetary Database', reference: 'starWars', colour: '#FEC107' }, { name: 'battleships', reference: 'battleships', colour: '#673BB7' }],
       currentSelection: null
     };
     return _this;
@@ -22442,6 +22442,10 @@ var _react = __webpack_require__(25);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _ImageArea = __webpack_require__(189);
+
+var _ImageArea2 = _interopRequireDefault(_ImageArea);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22460,9 +22464,22 @@ var ProjectContent = function (_React$Component) {
   }
 
   _createClass(ProjectContent, [{
-    key: "render",
+    key: 'render',
     value: function render() {
-      return _react2.default.createElement("div", { className: "project-content" });
+      return _react2.default.createElement(
+        'div',
+        { className: 'project-content' },
+        _react2.default.createElement(_ImageArea2.default, { currentSelection: this.props.currentSelection }),
+        _react2.default.createElement(
+          'div',
+          { className: 'project-info-text' },
+          _react2.default.createElement(
+            'p',
+            null,
+            'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+          )
+        )
+      );
     }
   }]);
 
@@ -22470,6 +22487,108 @@ var ProjectContent = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = ProjectContent;
+
+/***/ }),
+/* 188 */,
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(25);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Thumbnail = __webpack_require__(190);
+
+var _Thumbnail2 = _interopRequireDefault(_Thumbnail);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ImageArea = function (_React$Component) {
+  _inherits(ImageArea, _React$Component);
+
+  function ImageArea(props) {
+    _classCallCheck(this, ImageArea);
+
+    var _this = _possibleConstructorReturn(this, (ImageArea.__proto__ || Object.getPrototypeOf(ImageArea)).call(this, props));
+
+    _this.state = {
+      currentImage: props.currentSelection.photos[0]
+    };
+    return _this;
+  }
+
+  _createClass(ImageArea, [{
+    key: 'render',
+    value: function render() {
+
+      var thumbnails = this.props.currentSelection.photos.map(function (photo, index) {
+        return _react2.default.createElement(_Thumbnail2.default, { image: photo, key: index, id: photo + '-' + index });
+      });
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'images' },
+        _react2.default.createElement(
+          'div',
+          { className: 'thumbs' },
+          thumbnails
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'main-image' },
+          _react2.default.createElement('img', { src: this.state.currentImage })
+        )
+      );
+    }
+  }]);
+
+  return ImageArea;
+}(_react2.default.Component);
+
+exports.default = ImageArea;
+
+/***/ }),
+/* 190 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(25);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Thumbnail = function Thumbnail(props) {
+
+  return _react2.default.createElement(
+    "div",
+    { className: "thumbnail" },
+    _react2.default.createElement("img", { src: props.image, id: props.id })
+  );
+};
+
+exports.default = Thumbnail;
 
 /***/ })
 /******/ ]);

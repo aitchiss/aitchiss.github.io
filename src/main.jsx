@@ -8,7 +8,11 @@ class Main extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      projects: [{name: 'animal shelter', reference: 'animalShelter', colour: '#EA1E63'}, 
+      projects: [{name: 'animal shelter', reference: 'animalShelter', colour: '#EA1E63', photos: [
+      'https://github.com/aitchiss/animal_shelter/blob/master/documentation/owner_profile.png?raw=true',
+      'https://github.com/aitchiss/animal_shelter/blob/master/documentation/animals_index.png?raw=true',
+      'https://github.com/aitchiss/animal_shelter/blob/master/documentation/matches_page.png?raw=true'
+      ]}, 
       {name: 'workout planner', reference: 'workoutPlanner', colour: '#9C28B1'}, 
       {name: 'iDrinkies', reference: 'iDrinkies', colour: '#00BCD5'}, 
       {name: 'hooses', reference: 'hooses', colour: '#019587'}, 
