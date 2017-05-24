@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectHeading from './ProjectHeading'
+import ProjectContent from './ProjectContent'
 
 
 class ProjectSection extends React.Component{
@@ -10,6 +11,7 @@ class ProjectSection extends React.Component{
       return(
         <div id="project-view">
           <ProjectHeading title={this.props.currentSelection.name} colour={this.props.currentSelection.colour}/>
+          <ProjectContent currentSelection={this.props.currentSelection}/>
         </div>
       ) 
     } else {

@@ -3,11 +3,11 @@ body{
   background-color: #ECEFF1;
 }
 
-.header h1{
+.top-header h1{
   font-family: 'Roboto Slab', serif;
 }
 
-.header{
+.top-header{
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -15,7 +15,7 @@ body{
   color: white;
 }
 
-.header img{
+.top-header img{
   width: 140px;
   margin: 20px;
   border-radius: 100px;
@@ -23,7 +23,7 @@ body{
 
 .header-text{
   margin-right: 40px;
-  margin-top: 15px;
+  margin-top: 50px;
 }
 
 .nav{
