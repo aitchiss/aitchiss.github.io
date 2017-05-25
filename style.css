@@ -1,6 +1,7 @@
 #app{
   font-family: 'Raleway', sans-serif;
   background-color: #ECEFF1;
+  font-size: 1.15em;
 }
 
 .top-header h1{
@@ -22,7 +23,7 @@
 
 .header-text{
   margin-right: 40px;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 .nav-links{
@@ -146,7 +147,7 @@
   color: white;
   text-align: center;
   height: 100px;
-  padding-top: 25px;
+  padding-top: 10px;
 }
 
 #project-view{
