@@ -9682,6 +9682,11 @@ var AboutSection = function AboutSection(props) {
         _react2.default.createElement(
           "li",
           null,
+          "Node JS, NPM, Webpack and Babel"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
           "Utilising and creating RESTful APIs"
         ),
         _react2.default.createElement(
@@ -22825,95 +22830,130 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var ImageArea = function (_React$Component) {
   _inherits(ImageArea, _React$Component);
 
-  function ImageArea(props) {
+  function ImageArea() {
     _classCallCheck(this, ImageArea);
 
-    var _this = _possibleConstructorReturn(this, (ImageArea.__proto__ || Object.getPrototypeOf(ImageArea)).call(this, props));
-
-    _this.state = {
-      currentImage: props.currentSelection.photos[0]
-    };
-    return _this;
+    return _possibleConstructorReturn(this, (ImageArea.__proto__ || Object.getPrototypeOf(ImageArea)).apply(this, arguments));
   }
 
   _createClass(ImageArea, [{
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(nextProps) {
-      if (nextProps !== this.props) {
-        this.setState({ currentImage: nextProps.currentSelection.photos[0] });
-      }
-    }
-  }, {
     key: 'render',
     value: function render() {
 
-      var thumbnails = this.props.currentSelection.photos.map(function (photo, index) {
-        return _react2.default.createElement(_SlideImage2.default, { image: photo, key: index, id: index });
-      });
+      if (this.props.currentSelection.photos) {
+        var thumbnails = this.props.currentSelection.photos.map(function (photo, index) {
+          return _react2.default.createElement(_SlideImage2.default, { image: photo, key: index, id: index });
+        });
 
-      return _react2.default.createElement(
-        'div',
-        { className: 'images' },
-        _react2.default.createElement(
+        return _react2.default.createElement(
           'div',
-          { id: 'carousel-example-generic', className: 'carousel slide', 'data-ride': 'carousel' },
+          { className: 'images' },
           _react2.default.createElement(
             'div',
-            { className: 'carousel-inner' },
-            thumbnails
-          ),
-          _react2.default.createElement(
-            'a',
-            { className: 'left carousel-control', href: '#carousel-example-generic', role: 'button', 'data-slide': 'prev' },
-            _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-left', style: { color: this.props.currentSelection.colour } })
-          ),
-          _react2.default.createElement(
-            'a',
-            { className: 'right carousel-control', href: '#carousel-example-generic', role: 'button', 'data-slide': 'next' },
-            _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right', style: { color: this.props.currentSelection.colour } })
-          )
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          _react2.default.createElement(
-            'a',
-            { href: this.props.currentSelection.githubLink },
-            'Check out the code on GitHub '
-          )
-        ),
-        _react2.default.createElement(
-          'ul',
-          { className: 'nav-links' },
-          _react2.default.createElement(
-            'li',
-            null,
+            { id: 'carousel-example-generic', className: 'carousel slide', 'data-ride': 'carousel' },
+            _react2.default.createElement(
+              'div',
+              { className: 'carousel-inner' },
+              thumbnails
+            ),
             _react2.default.createElement(
               'a',
-              { href: 'http://github.com/aitchiss', style: { color: this.props.currentSelection.colour } },
-              _react2.default.createElement('i', { className: 'fa fa-github fa-2x', 'aria-hidden': 'true' })
+              { className: 'left carousel-control', href: '#carousel-example-generic', role: 'button', 'data-slide': 'prev' },
+              _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-left', style: { color: this.props.currentSelection.colour } })
+            ),
+            _react2.default.createElement(
+              'a',
+              { className: 'right carousel-control', href: '#carousel-example-generic', role: 'button', 'data-slide': 'next' },
+              _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right', style: { color: this.props.currentSelection.colour } })
             )
           ),
           _react2.default.createElement(
-            'li',
+            'p',
             null,
             _react2.default.createElement(
               'a',
-              { href: 'https://www.linkedin.com/in/suzanne-aitchison-59aa2838/', style: { color: this.props.currentSelection.colour } },
-              _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-2x', 'aria-hidden': 'true' })
+              { href: this.props.currentSelection.githubLink },
+              'Check out the code on GitHub '
             )
           ),
           _react2.default.createElement(
-            'li',
+            'ul',
+            { className: 'nav-links' },
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'http://github.com/aitchiss', style: { color: this.props.currentSelection.colour } },
+                _react2.default.createElement('i', { className: 'fa fa-github fa-2x', 'aria-hidden': 'true' })
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'https://www.linkedin.com/in/suzanne-aitchison-59aa2838/', style: { color: this.props.currentSelection.colour } },
+                _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-2x', 'aria-hidden': 'true' })
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'mailto:suzanne.aitchison@gmail.com', style: { color: this.props.currentSelection.colour } },
+                _react2.default.createElement('i', { className: 'fa fa-envelope fa-2x', 'aria-hidden': 'true' })
+              )
+            )
+          )
+        );
+      } else {
+        return _react2.default.createElement(
+          'div',
+          { className: 'images' },
+          _react2.default.createElement(
+            'p',
             null,
             _react2.default.createElement(
               'a',
-              { href: 'mailto:suzanne.aitchison@gmail.com', style: { color: this.props.currentSelection.colour } },
-              _react2.default.createElement('i', { className: 'fa fa-envelope fa-2x', 'aria-hidden': 'true' })
+              { href: this.props.currentSelection.githubLink },
+              'Check out the code on GitHub '
+            )
+          ),
+          _react2.default.createElement(
+            'ul',
+            { className: 'nav-links' },
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'http://github.com/aitchiss', style: { color: this.props.currentSelection.colour } },
+                _react2.default.createElement('i', { className: 'fa fa-github fa-2x', 'aria-hidden': 'true' })
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'https://www.linkedin.com/in/suzanne-aitchison-59aa2838/', style: { color: this.props.currentSelection.colour } },
+                _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-2x', 'aria-hidden': 'true' })
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'mailto:suzanne.aitchison@gmail.com', style: { color: this.props.currentSelection.colour } },
+                _react2.default.createElement('i', { className: 'fa fa-envelope fa-2x', 'aria-hidden': 'true' })
+              )
             )
           )
-        )
-      );
+        );
+      }
     }
   }]);
 

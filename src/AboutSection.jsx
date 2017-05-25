@@ -21,6 +21,7 @@ const AboutSection = (props) => {
         <ul>
           <li>Programming languages including JavaScript, Java, Ruby</li>
           <li>Experience with frameworks including React and Ruby on Rails</li>
+          <li>Node JS, NPM, Webpack and Babel</li>
           <li>Utilising and creating RESTful APIs</li>
           <li>SQL and noSQL database experience</li>
           <li>Strong grounding in OOP and SOLID principles</li>
