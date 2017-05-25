@@ -22639,12 +22639,12 @@ var ImageArea = function (_React$Component) {
           _react2.default.createElement(
             'a',
             { className: 'left carousel-control', href: '#carousel-example-generic', role: 'button', 'data-slide': 'prev' },
-            _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-left' })
+            _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-left', style: { color: this.props.currentSelection.colour } })
           ),
           _react2.default.createElement(
             'a',
             { className: 'right carousel-control', href: '#carousel-example-generic', role: 'button', 'data-slide': 'next' },
-            _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
+            _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right', style: { color: this.props.currentSelection.colour } })
           )
         ),
         _react2.default.createElement(

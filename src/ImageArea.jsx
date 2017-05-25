@@ -25,6 +25,7 @@ class ImageArea extends React.Component{
       return <SlideImage image={photo} key={index} id={index} />
     })
 
+
     return(
       <div className="images">
         <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
@@ -33,11 +34,11 @@ class ImageArea extends React.Component{
           </div>
 
           
-          <a className="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span className="glyphicon glyphicon-chevron-left"></span>
+          <a className="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" >
+            <span className="glyphicon glyphicon-chevron-left" style={{color: this.props.currentSelection.colour}}></span>
           </a>
-          <a className="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span className="glyphicon glyphicon-chevron-right"></span>
+          <a className="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" >
+            <span className="glyphicon glyphicon-chevron-right" style={{color: this.props.currentSelection.colour}}></span>
           </a>
         </div> 
         <p><a href={this.props.currentSelection.githubLink}>Check out the code on GitHub </a></p>
