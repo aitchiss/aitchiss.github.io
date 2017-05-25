@@ -22480,7 +22480,7 @@ var ProjectContent = function (_React$Component) {
             _react2.default.createElement(
               'p',
               null,
-              'A web application built in Ruby/Sinatra, using a PostgreSQL database. The brief for the project was as follows: '
+              'A web application built in Ruby/Sinatra, using a PostgreSQL database. The example brief for the project (developed as part of CodeClan studies) was as follows: '
             ),
             _react2.default.createElement(
               'p',
@@ -22541,7 +22541,228 @@ var ProjectContent = function (_React$Component) {
               )
             )
           );
-
+          break;
+        case 'workoutPlanner':
+          text = _react2.default.createElement(
+            'div',
+            { className: 'project-info-text' },
+            _react2.default.createElement(
+              'p',
+              null,
+              'As someone who enjoys lifting weights in the gym, I developed this app to help track workout plans. My MVP for this app was to allow the user to:'
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                'create custom workout plans, saved in history with a name'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'add and remove sets from a workout plan'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'select from pre-programmed activities, as well as able to enter custom inputs'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'follow a workout while at the gym, viewing and editing progress set by set'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'have a saved record of workout performance and view it in a history'
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Additional features in the final product included:'
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                'ability to add or delete similar sets from the workout overview screen'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'skip a set with one click'
+              )
+            )
+          );
+          break;
+        case 'iDrinkies':
+          text = _react2.default.createElement(
+            'div',
+            { className: 'project-info-text' },
+            _react2.default.createElement(
+              'p',
+              null,
+              'A web application built in vanilla JavaScript, utilising the Google Maps API and a local Node Express API with MongoDB. The example brief for this project (undertaken as part of CodeClan studies) was:'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Create a stockist locator for independent brewer "iDrinkies". The application should feature:'
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                'a GoogleMap showing the location of all stockists'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'markers indicating the location of stockists'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'info windows on markers showing stockist details and distance from the user\'s current location'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'search box (with autocomplete) allowing search by street, area, postcode'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'button to use current location to find stockists'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'expanding and collapsing information list for each stockist'
+              )
+            )
+          );
+          break;
+        case 'starWars':
+          text = _react2.default.createElement(
+            'div',
+            { className: 'project-info-text' },
+            _react2.default.createElement(
+              'p',
+              null,
+              'This web application pulls data from the ',
+              _react2.default.createElement(
+                'a',
+                { href: 'http://swapi.co/api/planets/' },
+                'Star Wars API'
+              ),
+              ' and displays it in a table. Features include: '
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                'Responsive design, including alternate mobile/tablet layout'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Sortable column headers (desktop screens only)'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Search by planet name'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Paginated view, including footer to navigate between pages'
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Built using vanilla JavaScript, although having now learned front-end frameworks such as React, it is my intention to revisit!'
+            )
+          );
+          break;
+        case 'battleships':
+          text = _react2.default.createElement(
+            'div',
+            { className: 'project-info-text' },
+            _react2.default.createElement(
+              'p',
+              null,
+              'A multiplayer game of battleships, built with React JavaScript, socket.io and Node Express server. Each player has a primary board and a tracking board; players play in real time against each other to try to hit each others\' ships. Web sockets are used for transferral of information between players.'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Visit the ',
+              _react2.default.createElement(
+                'a',
+                { href: this.props.currentSelection.githubLink },
+                'GitHub page'
+              ),
+              ' for instructions on how to download and play!'
+            )
+          );
+          break;
+        case 'hooses':
+          text = _react2.default.createElement(
+            'div',
+            { className: 'project-info-text' },
+            _react2.default.createElement(
+              'p',
+              null,
+              'Undertaken as my final project at CodeClan, the Hooses web application is a real-world brief designed to meet the need for better communication between co-owners of properties. Built using a Rails 5 API (with Postgres database), Node Express client-side server, socket.io, and React JavaScript front-end utilising Bootstrap. The application is currently still a work in progress, but currently features functionality such as:'
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                'Authentication with Devise secure login'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Owners may belong to more than one \'co-owner group\' with other users who part-own the same property'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Users can maintain/edit their profile'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Live chat between property co-owners utilising sockets'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Financial reporting for a property using Highcharts API and Postgres database'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Users may view/add/delete topics and related messages for their properties'
+              )
+            )
+          );
       }
 
       return text;
