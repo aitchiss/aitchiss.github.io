@@ -16,7 +16,7 @@ class Main extends React.Component{
       'https://github.com/aitchiss/animal_shelter/blob/master/documentation/add_new_owner_form.png?raw=true',
       'https://github.com/aitchiss/animal_shelter/blob/master/documentation/home_page.png?raw=true'
       ]}, 
-      {name: 'workout planner', reference: 'workoutPlanner', colour: '#9C28B1', githubLink: 'https://github.com/aitchiss/workout_planner', 
+      {name: 'android workout planner', reference: 'workoutPlanner', colour: '#9C28B1', githubLink: 'https://github.com/aitchiss/workout_planner', 
       photos: [
       'https://github.com/aitchiss/workout_planner/blob/master/documentation/Screen%20Shot%202017-03-26%20at%2016.20.05.jpg?raw=true',
       'https://github.com/aitchiss/workout_planner/blob/master/documentation/Screen%20Shot%202017-03-26%20at%2016.20.14.jpg?raw=true',

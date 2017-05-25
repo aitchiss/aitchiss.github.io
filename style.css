@@ -87,6 +87,10 @@ body{
   background-color: #9C28B1;
 }
 
+#workoutPlanner p{
+  margin-top: 40px;
+}
+
 #iDrinkies{
   grid-area: iDrinkies;
   background-color: #00BCD5;
@@ -135,6 +139,8 @@ body{
 }
 
 
+
+
 .project-heading{
   font-family: 'Roboto Slab', serif;
   color: white;
@@ -163,6 +169,10 @@ body{
   width: 500px;
 }
 
+.images p{
+  margin-top: 40px;
+}
+
 .project-info-text{
   padding-top: 40px;
   width: 500px;
@@ -188,6 +198,10 @@ body{
 
 .carousel-control.right{
   background: none !important
+}
+
+.glyphicon{
+  color: red;
 }
 
 .main-image img{

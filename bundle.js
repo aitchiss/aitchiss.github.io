@@ -9560,7 +9560,7 @@ var Main = function (_React$Component) {
 
     _this.state = {
       projects: [{ name: 'animal shelter', reference: 'animalShelter', colour: '#EA1E63', githubLink: 'https://github.com/aitchiss/animal_shelter',
-        photos: ['https://github.com/aitchiss/animal_shelter/blob/master/documentation/animals_index.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/owner_profile.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/matches_page.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/add_new_owner_form.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/home_page.png?raw=true'] }, { name: 'workout planner', reference: 'workoutPlanner', colour: '#9C28B1', githubLink: 'https://github.com/aitchiss/workout_planner',
+        photos: ['https://github.com/aitchiss/animal_shelter/blob/master/documentation/animals_index.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/owner_profile.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/matches_page.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/add_new_owner_form.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/home_page.png?raw=true'] }, { name: 'android workout planner', reference: 'workoutPlanner', colour: '#9C28B1', githubLink: 'https://github.com/aitchiss/workout_planner',
         photos: ['https://github.com/aitchiss/workout_planner/blob/master/documentation/Screen%20Shot%202017-03-26%20at%2016.20.05.jpg?raw=true', 'https://github.com/aitchiss/workout_planner/blob/master/documentation/Screen%20Shot%202017-03-26%20at%2016.20.14.jpg?raw=true', 'https://github.com/aitchiss/workout_planner/blob/master/documentation/Screen%20Shot%202017-03-26%20at%2016.19.53.jpg?raw=true'] }, { name: 'iDrinkies', reference: 'iDrinkies', colour: '#00BCD5', githubLink: 'https://github.com/aitchiss/iDrinkies',
         photos: ['https://github.com/aitchiss/iDrinkies/blob/master/docs/main_top.png?raw=true', 'https://github.com/aitchiss/iDrinkies/blob/master/docs/main_expanded_info.png?raw=true'] }, { name: 'hooses', reference: 'hooses', colour: '#019587', githubLink: 'https://github.com/aitchiss/Hooses_Project' }, { name: 'Star Wars Planetary Database', reference: 'starWars', colour: '#FEC107', githubLink: 'https://github.com/aitchiss/star_wars_planetary_guide',
         photos: ['https://github.com/aitchiss/star_wars_planetary_guide/blob/master/docs/main_view_top.png?raw=true', 'https://github.com/aitchiss/star_wars_planetary_guide/blob/master/docs/main_view_bottom.png?raw=true', 'https://github.com/aitchiss/star_wars_planetary_guide/blob/master/docs/mobile_view.png?raw=true'] }, { name: 'battleships', reference: 'battleships', colour: '#673BB7', githubLink: 'https://github.com/aitchiss/battleships' }],
@@ -22468,21 +22468,95 @@ var ProjectContent = function (_React$Component) {
   }
 
   _createClass(ProjectContent, [{
+    key: 'getText',
+    value: function getText() {
+      var text = void 0;
+
+      switch (this.props.currentSelection.reference) {
+        case 'animalShelter':
+          text = _react2.default.createElement(
+            'div',
+            { className: 'project-info-text' },
+            _react2.default.createElement(
+              'p',
+              null,
+              'A web application built in Ruby/Sinatra, using a PostgreSQL database. The brief for the project was as follows: '
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'The Scottish Animal Shelter accepts orphaned or stray animals and takes care of them until they can be adopted by a new owner. The shelter has a list of potential new owners for the animals. Animals may take a while to be trained up and made healthy before being available for adoption. They need a management system to keep track of their animals and owners. The system must allow a user to:'
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                'List of all their animals and their admission date'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Mark an animal as being adoptable/not adoptable'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Assign an animal to a new owner'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'List all the owners and their adopted animals'
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Additional functionality added:'
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                'full CRUD actions for owners and animals'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'easily filtered views'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'search for animals by breed/type'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'view matches between animals and owners, dependent on each animal\'s individual needs, and the owner\'s home environment'
+              )
+            )
+          );
+
+      }
+
+      return text;
+    }
+  }, {
     key: 'render',
     value: function render() {
+
+      var text = this.getText();
+
       return _react2.default.createElement(
         'div',
         { className: 'project-content' },
         _react2.default.createElement(_ImageArea2.default, { currentSelection: this.props.currentSelection }),
-        _react2.default.createElement(
-          'div',
-          { className: 'project-info-text' },
-          _react2.default.createElement(
-            'p',
-            null,
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-          )
-        )
+        text
       );
     }
   }]);
@@ -22558,13 +22632,6 @@ var ImageArea = function (_React$Component) {
           'div',
           { id: 'carousel-example-generic', className: 'carousel slide', 'data-ride': 'carousel' },
           _react2.default.createElement(
-            'ol',
-            { className: 'carousel-indicators' },
-            _react2.default.createElement('li', { 'data-target': '#carousel-example-generic', 'data-slide-to': '0', className: 'active' }),
-            _react2.default.createElement('li', { 'data-target': '#carousel-example-generic', 'data-slide-to': '1' }),
-            _react2.default.createElement('li', { 'data-target': '#carousel-example-generic', 'data-slide-to': '2' })
-          ),
-          _react2.default.createElement(
             'div',
             { className: 'carousel-inner' },
             thumbnails
@@ -22578,6 +22645,15 @@ var ImageArea = function (_React$Component) {
             'a',
             { className: 'right carousel-control', href: '#carousel-example-generic', role: 'button', 'data-slide': 'next' },
             _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
+          )
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          _react2.default.createElement(
+            'a',
+            { href: this.props.currentSelection.githubLink },
+            'Check out the code on GitHub '
           )
         )
       );

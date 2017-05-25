@@ -28,14 +28,6 @@ class ImageArea extends React.Component{
     return(
       <div className="images">
         <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
-          
-          <ol className="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" className="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
-
-          
           <div className="carousel-inner">
             {thumbnails}
           </div>
@@ -48,6 +40,7 @@ class ImageArea extends React.Component{
             <span className="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div> 
+        <p><a href={this.props.currentSelection.githubLink}>Check out the code on GitHub </a></p>
       </div>
 
     )
