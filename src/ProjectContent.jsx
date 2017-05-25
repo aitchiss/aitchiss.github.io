@@ -101,6 +101,7 @@ class ProjectContent extends React.Component{
             <li>Financial reporting for a property using Highcharts API and Postgres database</li>
             <li>Users may view/add/delete topics and related messages for their properties</li>
           </ul>
+          <p>Work continues on this project, including the front-end design which was initially developed as part of a rapid proof of concept/prototype in order to meet the 6 day project timeline.</p>
         </div>
       )
     }

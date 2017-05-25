@@ -9702,14 +9702,14 @@ var AboutSection = function AboutSection(props) {
       ),
       _react2.default.createElement(
         "ul",
-        { className: "nav" },
+        { className: "nav-links" },
         _react2.default.createElement(
           "li",
           null,
           _react2.default.createElement(
             "a",
             { href: "http://github.com/aitchiss" },
-            _react2.default.createElement("img", { src: "https://image.flaticon.com/icons/png/512/23/23957.png" })
+            _react2.default.createElement("i", { className: "fa fa-github fa-2x", "aria-hidden": "true" })
           )
         ),
         _react2.default.createElement(
@@ -9718,7 +9718,7 @@ var AboutSection = function AboutSection(props) {
           _react2.default.createElement(
             "a",
             { href: "https://www.linkedin.com/in/suzanne-aitchison-59aa2838/" },
-            _react2.default.createElement("img", { src: "http://icons.iconarchive.com/icons/icons8/windows-8/512/Social-Networks-Linkedin-icon.png" })
+            _react2.default.createElement("i", { className: "fa fa-linkedin-square fa-2x", "aria-hidden": "true" })
           )
         ),
         _react2.default.createElement(
@@ -9727,7 +9727,7 @@ var AboutSection = function AboutSection(props) {
           _react2.default.createElement(
             "a",
             { href: "mailto:suzanne.aitchison@gmail.com" },
-            _react2.default.createElement("img", { id: "email", src: "http://www.iconsfind.com/wp-content/uploads/2015/11/20151104_563973a8dd4e6-210x210.png" })
+            _react2.default.createElement("i", { className: "fa fa-envelope fa-2x", "aria-hidden": "true" })
           )
         )
       )
@@ -22761,6 +22761,11 @@ var ProjectContent = function (_React$Component) {
                 null,
                 'Users may view/add/delete topics and related messages for their properties'
               )
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Work continues on this project, including the front-end design which was initially developed as part of a rapid proof of concept/prototype in order to meet the 6 day project timeline.'
             )
           );
       }
@@ -22875,6 +22880,37 @@ var ImageArea = function (_React$Component) {
             'a',
             { href: this.props.currentSelection.githubLink },
             'Check out the code on GitHub '
+          )
+        ),
+        _react2.default.createElement(
+          'ul',
+          { className: 'nav-links' },
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: 'http://github.com/aitchiss', style: { color: this.props.currentSelection.colour } },
+              _react2.default.createElement('i', { className: 'fa fa-github fa-2x', 'aria-hidden': 'true' })
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: 'https://www.linkedin.com/in/suzanne-aitchison-59aa2838/', style: { color: this.props.currentSelection.colour } },
+              _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-2x', 'aria-hidden': 'true' })
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: 'mailto:suzanne.aitchison@gmail.com', style: { color: this.props.currentSelection.colour } },
+              _react2.default.createElement('i', { className: 'fa fa-envelope fa-2x', 'aria-hidden': 'true' })
+            )
           )
         )
       );

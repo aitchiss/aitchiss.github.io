@@ -42,6 +42,13 @@ class ImageArea extends React.Component{
           </a>
         </div> 
         <p><a href={this.props.currentSelection.githubLink}>Check out the code on GitHub </a></p>
+        <ul className="nav-links">
+                 
+          <li><a href="http://github.com/aitchiss" style={{color: this.props.currentSelection.colour}}><i className="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+
+          <li><a href="https://www.linkedin.com/in/suzanne-aitchison-59aa2838/" style={{color: this.props.currentSelection.colour}}><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+          <li><a href="mailto:suzanne.aitchison@gmail.com" style={{color: this.props.currentSelection.colour}}><i className="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+        </ul>
       </div>
 
     )

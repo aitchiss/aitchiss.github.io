@@ -26,10 +26,12 @@ const AboutSection = (props) => {
           <li>Strong grounding in OOP and SOLID principles</li>
           <li>Test Driven Development</li>
         </ul>
-        <ul className="nav">
-          <li><a href="http://github.com/aitchiss"><img src="https://image.flaticon.com/icons/png/512/23/23957.png" /></a></li>
-          <li><a href="https://www.linkedin.com/in/suzanne-aitchison-59aa2838/"><img src="http://icons.iconarchive.com/icons/icons8/windows-8/512/Social-Networks-Linkedin-icon.png" /></a></li>
-          <li><a href="mailto:suzanne.aitchison@gmail.com"><img id="email" src="http://www.iconsfind.com/wp-content/uploads/2015/11/20151104_563973a8dd4e6-210x210.png" /></a></li>
+        <ul className="nav-links">
+         
+          <li><a href="http://github.com/aitchiss"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+
+          <li><a href="https://www.linkedin.com/in/suzanne-aitchison-59aa2838/"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+          <li><a href="mailto:suzanne.aitchison@gmail.com"><i className="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
         </ul>
       </div>
 
