@@ -10,9 +10,7 @@ class ImageArea extends React.Component{
     }
   }
 
-  // handleThumbClick(e){
-  //   this.setState({currentImage: this.props.currentSelection.photos[e.target.id]})
-  // }
+  
 
   componentWillReceiveProps(nextProps){
     if (nextProps !== this.props){
@@ -56,12 +54,6 @@ class ImageArea extends React.Component{
   }
 
 }
-//
-//<div className="thumbs">
-//{thumbnails}
-//</div>
-//<div className="main-image">
-//  <img src={this.state.currentImage} />
-//</div>
+
 
 export default ImageArea
