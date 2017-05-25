@@ -18,8 +18,5 @@ const SlideImage = (props) => {
   )
 }
 
-//<div className="carousel-caption">
-//  <h3>Caption Text</h3>
-//</div>
 
 export default SlideImage

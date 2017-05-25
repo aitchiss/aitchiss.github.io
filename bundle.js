@@ -22957,10 +22957,6 @@ var SlideImage = function SlideImage(props) {
   );
 };
 
-//<div className="carousel-caption">
-//  <h3>Caption Text</h3>
-//</div>
-
 exports.default = SlideImage;
 
 /***/ })

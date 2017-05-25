@@ -183,18 +183,6 @@
   width: 500px;
 }
 
-.thumbs{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
-
-.thumbnail img{
-  width: 100px;
-  margin-right: 20px;
-}
 
 .carousel-control.left{
   background: none !important
@@ -204,10 +192,5 @@
   background: none !important
 }
 
-
-.main-image img{
-  width: 500px;
-  
-}
 
 
