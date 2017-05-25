@@ -1,5 +1,5 @@
 import React from 'react'
-import Thumbnail from './Thumbnail'
+import SlideImage from './SlideImage'
 
 class ImageArea extends React.Component{
 
@@ -10,30 +10,58 @@ class ImageArea extends React.Component{
     }
   }
 
-  handleThumbClick(e){
-    this.setState({currentImage: this.props.currentSelection.photos[e.target.id]})
+  // handleThumbClick(e){
+  //   this.setState({currentImage: this.props.currentSelection.photos[e.target.id]})
+  // }
+
+  componentWillReceiveProps(nextProps){
+    if (nextProps !== this.props){
+      this.setState({currentImage: nextProps.currentSelection.photos[0]})
+    }
   }
 
 
   render(){
 
     const thumbnails = this.props.currentSelection.photos.map((photo, index) => {
-      return <Thumbnail image={photo} key={index} id={index} clickHandler={this.handleThumbClick.bind(this)}/>
+      return <SlideImage image={photo} key={index} id={index} />
     })
 
     return(
       <div className="images">
-        <div className="thumbs">
-        {thumbnails}
-        </div>
-        <div className="main-image">
-          <img src={this.state.currentImage} />
-        </div>
+        <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
+          
+          <ol className="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" className="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          
+          <div className="carousel-inner">
+            {thumbnails}
+          </div>
+
+          
+          <a className="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span className="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a className="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span className="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div> 
       </div>
 
     )
   }
 
 }
+//
+//<div className="thumbs">
+//{thumbnails}
+//</div>
+//<div className="main-image">
+//  <img src={this.state.currentImage} />
+//</div>
 
 export default ImageArea

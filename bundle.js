@@ -9559,7 +9559,7 @@ var Main = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
     _this.state = {
-      projects: [{ name: 'animal shelter', reference: 'animalShelter', colour: '#EA1E63', photos: ['https://github.com/aitchiss/animal_shelter/blob/master/documentation/owner_profile.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/animals_index.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/matches_page.png?raw=true'] }, { name: 'workout planner', reference: 'workoutPlanner', colour: '#9C28B1' }, { name: 'iDrinkies', reference: 'iDrinkies', colour: '#00BCD5' }, { name: 'hooses', reference: 'hooses', colour: '#019587' }, { name: 'Star Wars Planetary Database', reference: 'starWars', colour: '#FEC107' }, { name: 'battleships', reference: 'battleships', colour: '#673BB7' }],
+      projects: [{ name: 'animal shelter', reference: 'animalShelter', colour: '#EA1E63', photos: ['https://github.com/aitchiss/animal_shelter/blob/master/documentation/animals_index.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/owner_profile.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/matches_page.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/add_new_owner_form.png?raw=true', 'https://github.com/aitchiss/animal_shelter/blob/master/documentation/home_page.png?raw=true'] }, { name: 'workout planner', reference: 'workoutPlanner', colour: '#9C28B1', photos: ['https://github.com/aitchiss/workout_planner/blob/master/documentation/Screen%20Shot%202017-03-26%20at%2016.20.05.jpg?raw=true', 'https://github.com/aitchiss/workout_planner/blob/master/documentation/Screen%20Shot%202017-03-26%20at%2016.20.14.jpg?raw=true', 'https://github.com/aitchiss/workout_planner/blob/master/documentation/Screen%20Shot%202017-03-26%20at%2016.19.53.jpg?raw=true'] }, { name: 'iDrinkies', reference: 'iDrinkies', colour: '#00BCD5', photos: ['https://github.com/aitchiss/iDrinkies/blob/master/docs/main_top.png?raw=true', 'https://github.com/aitchiss/iDrinkies/blob/master/docs/main_expanded_info.png?raw=true'] }, { name: 'hooses', reference: 'hooses', colour: '#019587' }, { name: 'Star Wars Planetary Database', reference: 'starWars', colour: '#FEC107', photos: ['https://github.com/aitchiss/star_wars_planetary_guide/blob/master/docs/main_view_top.png?raw=true', 'https://github.com/aitchiss/star_wars_planetary_guide/blob/master/docs/main_view_bottom.png?raw=true', 'https://github.com/aitchiss/star_wars_planetary_guide/blob/master/docs/mobile_view.png?raw=true'] }, { name: 'battleships', reference: 'battleships', colour: '#673BB7' }],
       currentSelection: null
     };
     return _this;
@@ -22506,9 +22506,9 @@ var _react = __webpack_require__(25);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Thumbnail = __webpack_require__(190);
+var _SlideImage = __webpack_require__(191);
 
-var _Thumbnail2 = _interopRequireDefault(_Thumbnail);
+var _SlideImage2 = _interopRequireDefault(_SlideImage);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22532,18 +22532,23 @@ var ImageArea = function (_React$Component) {
     return _this;
   }
 
+  // handleThumbClick(e){
+  //   this.setState({currentImage: this.props.currentSelection.photos[e.target.id]})
+  // }
+
   _createClass(ImageArea, [{
-    key: 'handleThumbClick',
-    value: function handleThumbClick(e) {
-      this.setState({ currentImage: this.props.currentSelection.photos[e.target.id] });
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      if (nextProps !== this.props) {
+        this.setState({ currentImage: nextProps.currentSelection.photos[0] });
+      }
     }
   }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
 
       var thumbnails = this.props.currentSelection.photos.map(function (photo, index) {
-        return _react2.default.createElement(_Thumbnail2.default, { image: photo, key: index, id: index, clickHandler: _this2.handleThumbClick.bind(_this2) });
+        return _react2.default.createElement(_SlideImage2.default, { image: photo, key: index, id: index });
       });
 
       return _react2.default.createElement(
@@ -22551,13 +22556,29 @@ var ImageArea = function (_React$Component) {
         { className: 'images' },
         _react2.default.createElement(
           'div',
-          { className: 'thumbs' },
-          thumbnails
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'main-image' },
-          _react2.default.createElement('img', { src: this.state.currentImage })
+          { id: 'carousel-example-generic', className: 'carousel slide', 'data-ride': 'carousel' },
+          _react2.default.createElement(
+            'ol',
+            { className: 'carousel-indicators' },
+            _react2.default.createElement('li', { 'data-target': '#carousel-example-generic', 'data-slide-to': '0', className: 'active' }),
+            _react2.default.createElement('li', { 'data-target': '#carousel-example-generic', 'data-slide-to': '1' }),
+            _react2.default.createElement('li', { 'data-target': '#carousel-example-generic', 'data-slide-to': '2' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'carousel-inner' },
+            thumbnails
+          ),
+          _react2.default.createElement(
+            'a',
+            { className: 'left carousel-control', href: '#carousel-example-generic', role: 'button', 'data-slide': 'prev' },
+            _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-left' })
+          ),
+          _react2.default.createElement(
+            'a',
+            { className: 'right carousel-control', href: '#carousel-example-generic', role: 'button', 'data-slide': 'next' },
+            _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
+          )
         )
       );
     }
@@ -22565,11 +22586,19 @@ var ImageArea = function (_React$Component) {
 
   return ImageArea;
 }(_react2.default.Component);
+//
+//<div className="thumbs">
+//{thumbnails}
+//</div>
+//<div className="main-image">
+//  <img src={this.state.currentImage} />
+//</div>
 
 exports.default = ImageArea;
 
 /***/ }),
-/* 190 */
+/* 190 */,
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22585,16 +22614,33 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Thumbnail = function Thumbnail(props) {
+var SlideImage = function SlideImage(props) {
+
+  var active = "";
+
+  if (props.id === 0) {
+    active = "active";
+  } else {
+    active = "";
+  }
 
   return _react2.default.createElement(
     "div",
-    { className: "thumbnail" },
-    _react2.default.createElement("img", { src: props.image, id: props.id, onClick: props.clickHandler })
+    { className: "item" + " " + active },
+    _react2.default.createElement("img", { src: props.image }),
+    _react2.default.createElement(
+      "div",
+      { className: "carousel-caption" },
+      _react2.default.createElement(
+        "h3",
+        null,
+        "Caption Text"
+      )
+    )
   );
 };
 
-exports.default = Thumbnail;
+exports.default = SlideImage;
 
 /***/ })
 /******/ ]);
