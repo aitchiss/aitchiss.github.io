@@ -10,11 +10,11 @@ class Main extends React.Component{
     this.state = {
       projects: [{name: 'animal shelter', reference: 'animalShelter', colour: '#EA1E63', githubLink: 'https://github.com/aitchiss/animal_shelter',
       photos: [
-      'https://github.com/aitchiss/animal_shelter/blob/master/documentation/animals_index.png?raw=true',
-      'https://github.com/aitchiss/animal_shelter/blob/master/documentation/owner_profile.png?raw=true',
-      'https://github.com/aitchiss/animal_shelter/blob/master/documentation/matches_page.png?raw=true',
-      'https://github.com/aitchiss/animal_shelter/blob/master/documentation/add_new_owner_form.png?raw=true',
-      'https://github.com/aitchiss/animal_shelter/blob/master/documentation/home_page.png?raw=true'
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_animals_index.png?raw=true',
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_owner_profile.png?raw=true',
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_matches_page.png?raw=true',
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_add_new_owner_form.png?raw=true',
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_home_page.png?raw=true'
       ]}, 
       {name: 'android workout planner', reference: 'workoutPlanner', colour: '#9C28B1', githubLink: 'https://github.com/aitchiss/workout_planner', 
       photos: [
