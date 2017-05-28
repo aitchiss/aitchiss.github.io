@@ -22850,7 +22850,7 @@ var ImageArea = function (_React$Component) {
           { className: 'images' },
           _react2.default.createElement(
             'div',
-            { id: 'carousel-example-generic', className: 'carousel slide', 'data-ride': 'carousel' },
+            { id: 'carousel-project-images', className: 'carousel slide', 'data-ride': 'carousel' },
             _react2.default.createElement(
               'div',
               { className: 'carousel-inner' },
@@ -22858,12 +22858,12 @@ var ImageArea = function (_React$Component) {
             ),
             _react2.default.createElement(
               'a',
-              { className: 'left carousel-control', href: '#carousel-example-generic', role: 'button', 'data-slide': 'prev' },
+              { className: 'left carousel-control', href: '#carousel-project-images', role: 'button', 'data-slide': 'prev' },
               _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-left', style: { color: this.props.currentSelection.colour } })
             ),
             _react2.default.createElement(
               'a',
-              { className: 'right carousel-control', href: '#carousel-example-generic', role: 'button', 'data-slide': 'next' },
+              { className: 'right carousel-control', href: '#carousel-project-images', role: 'button', 'data-slide': 'next' },
               _react2.default.createElement('span', { className: 'glyphicon glyphicon-chevron-right', style: { color: this.props.currentSelection.colour } })
             )
           ),

@@ -15,16 +15,16 @@ class ImageArea extends React.Component{
 
       return(
         <div className="images">
-          <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
+          <div id="carousel-project-images" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">
               {thumbnails}
             </div>
 
             
-            <a className="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" >
+            <a className="left carousel-control" href="#carousel-project-images" role="button" data-slide="prev" >
               <span className="glyphicon glyphicon-chevron-left" style={{color: this.props.currentSelection.colour}}></span>
             </a>
-            <a className="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" >
+            <a className="right carousel-control" href="#carousel-project-images" role="button" data-slide="next" >
               <span className="glyphicon glyphicon-chevron-right" style={{color: this.props.currentSelection.colour}}></span>
             </a>
           </div> 
