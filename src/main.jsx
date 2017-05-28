@@ -24,8 +24,8 @@ class Main extends React.Component{
       ]}, 
       {name: 'iDrinkies', reference: 'iDrinkies', colour: '#00BCD5', githubLink: 'https://github.com/aitchiss/iDrinkies',
       photos: [
-      'https://github.com/aitchiss/iDrinkies/blob/master/docs/main_top.png?raw=true',
-      'https://github.com/aitchiss/iDrinkies/blob/master/docs/main_expanded_info.png?raw=true'
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/idrinkies_main_top.png?raw=true',
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/idrinkies_main_expanded_info.png?raw=true'
       ]}, 
       {name: 'hooses', reference: 'hooses', colour: '#019587', githubLink: 'https://github.com/aitchiss/Hooses_Project'}, 
       {name: 'Star Wars Planetary Database', reference: 'starWars', colour: '#FEC107', githubLink: 'https://github.com/aitchiss/star_wars_planetary_guide',
