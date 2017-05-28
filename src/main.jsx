@@ -30,9 +30,9 @@ class Main extends React.Component{
       {name: 'hooses', reference: 'hooses', colour: '#019587', githubLink: 'https://github.com/aitchiss/Hooses_Project'}, 
       {name: 'Star Wars Planetary Database', reference: 'starWars', colour: '#FEC107', githubLink: 'https://github.com/aitchiss/star_wars_planetary_guide',
       photos: [
-      'https://github.com/aitchiss/star_wars_planetary_guide/blob/master/docs/main_view_top.png?raw=true',
-      'https://github.com/aitchiss/star_wars_planetary_guide/blob/master/docs/main_view_bottom.png?raw=true',
-      'https://github.com/aitchiss/star_wars_planetary_guide/blob/master/docs/mobile_view.png?raw=true'
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/starwars_main_view_top.png?raw=true',
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/starwars_main_view_bottom.png?raw=true',
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/starwars_mobile_view.png?raw=true'
       ]}, 
       {name: 'battleships', reference: 'battleships', colour: '#673BB7', githubLink: 'https://github.com/aitchiss/battleships'}],
       currentSelection: null
