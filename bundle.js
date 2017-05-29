@@ -9638,7 +9638,15 @@ var AboutSection = function AboutSection(props) {
   };
 
   var projectDivs = props.projects.map(function (project, index) {
-    return _react2.default.createElement(_ProjectTile2.default, { moveToProject: moveToProject.bind(undefined), reference: project.reference, name: project.name, key: index, tagInfo: project.tags });
+    return _react2.default.createElement(
+      'div',
+      { className: 'project', onClick: moveToProject, id: project.reference, key: index },
+      _react2.default.createElement(
+        'p',
+        { onClick: moveToProject, id: project.reference },
+        project.name
+      )
+    );
   });
 
   return _react2.default.createElement(
