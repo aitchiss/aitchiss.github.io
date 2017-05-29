@@ -9560,10 +9560,10 @@ var Main = function (_React$Component) {
 
     _this.state = {
       projects: [{ name: 'animal shelter', reference: 'animalShelter', colour: '#EA1E63', githubLink: 'https://github.com/aitchiss/animal_shelter',
-        photos: ['https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_animals_index.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_owner_profile.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_matches_page.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_add_new_owner_form.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_home_page.png?raw=true'] }, { name: 'android workout planner', reference: 'workoutPlanner', colour: '#9C28B1', githubLink: 'https://github.com/aitchiss/workout_planner',
-        photos: ['https://github.com/aitchiss/aitchiss.github.io/blob/master/images/workout_planner_main_list.jpg?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/workout_planner_workout_view.jpg?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/workout_planner_play_workout.jpg?raw=true'] }, { name: 'iDrinkies', reference: 'iDrinkies', colour: '#00BCD5', githubLink: 'https://github.com/aitchiss/iDrinkies',
-        photos: ['https://github.com/aitchiss/aitchiss.github.io/blob/master/images/idrinkies_main_top.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/idrinkies_main_expanded_info.png?raw=true'] }, { name: 'hooses', reference: 'hooses', colour: '#019587', githubLink: 'https://github.com/aitchiss/Hooses_Project', photos: ['https://github.com/aitchiss/aitchiss.github.io/blob/master/images/hooses_home.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/hooses_topic_view.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/hooses_expenditure.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/hooses_profile_edit.png?raw=true'] }, { name: 'Star Wars Planetary Database', reference: 'starWars', colour: '#FEC107', githubLink: 'https://github.com/aitchiss/star_wars_planetary_guide',
-        photos: ['https://github.com/aitchiss/aitchiss.github.io/blob/master/images/starwars_main_view_top.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/starwars_main_view_bottom.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/starwars_mobile_view.png?raw=true'] }, { name: 'battleships', reference: 'battleships', colour: '#673BB7', githubLink: 'https://github.com/aitchiss/battleships', photos: ['https://github.com/aitchiss/aitchiss.github.io/blob/master/images/battleships_setup.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/battleships_game_start.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/battleships_mid_game2.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/battleships_mid_game1.png?raw=true'] }],
+        photos: ['https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_animals_index.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_owner_profile.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_matches_page.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_add_new_owner_form.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/cropped_home_page.png?raw=true'], tags: ['Ruby/Sinatra'] }, { name: 'android workout planner', reference: 'workoutPlanner', colour: '#9C28B1', githubLink: 'https://github.com/aitchiss/workout_planner',
+        photos: ['https://github.com/aitchiss/aitchiss.github.io/blob/master/images/workout_planner_main_list.jpg?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/workout_planner_workout_view.jpg?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/workout_planner_play_workout.jpg?raw=true'], tags: ['Android/Java'] }, { name: 'iDrinkies', reference: 'iDrinkies', colour: '#00BCD5', githubLink: 'https://github.com/aitchiss/iDrinkies',
+        photos: ['https://github.com/aitchiss/aitchiss.github.io/blob/master/images/idrinkies_main_top.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/idrinkies_main_expanded_info.png?raw=true'], tags: ['JavaScript'] }, { name: 'hooses', reference: 'hooses', colour: '#019587', githubLink: 'https://github.com/aitchiss/Hooses_Project', photos: ['https://github.com/aitchiss/aitchiss.github.io/blob/master/images/hooses_home.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/hooses_topic_view.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/hooses_expenditure.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/hooses_profile_edit.png?raw=true'], tags: ['React JS/Rails'] }, { name: 'Star Wars Planetary Database', reference: 'starWars', colour: '#FEC107', githubLink: 'https://github.com/aitchiss/star_wars_planetary_guide',
+        photos: ['https://github.com/aitchiss/aitchiss.github.io/blob/master/images/starwars_main_view_top.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/starwars_main_view_bottom.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/starwars_mobile_view.png?raw=true'], tags: ['JavaScript'] }, { name: 'battleships', reference: 'battleships', colour: '#673BB7', githubLink: 'https://github.com/aitchiss/battleships', photos: ['https://github.com/aitchiss/aitchiss.github.io/blob/master/images/battleships_setup.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/battleships_game_start.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/battleships_mid_game2.png?raw=true', 'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/battleships_mid_game1.png?raw=true'], tags: ['React/JavaScript'] }],
       currentSelection: null
     };
     return _this;
@@ -9624,6 +9624,10 @@ var _react = __webpack_require__(25);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _ProjectTile = __webpack_require__(192);
+
+var _ProjectTile2 = _interopRequireDefault(_ProjectTile);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var AboutSection = function AboutSection(props) {
@@ -9634,119 +9638,111 @@ var AboutSection = function AboutSection(props) {
   };
 
   var projectDivs = props.projects.map(function (project, index) {
-    return _react2.default.createElement(
-      "div",
-      { className: "project", onClick: moveToProject, id: project.reference, key: index },
-      _react2.default.createElement(
-        "p",
-        { onClick: moveToProject, id: project.reference },
-        project.name
-      )
-    );
+    return _react2.default.createElement(_ProjectTile2.default, { moveToProject: moveToProject.bind(undefined), reference: project.reference, name: project.name, key: index, tagInfo: project.tags });
   });
 
   return _react2.default.createElement(
-    "div",
-    { className: "about-section" },
+    'div',
+    { className: 'about-section' },
     _react2.default.createElement(
-      "div",
-      { className: "about-text" },
+      'div',
+      { className: 'about-text' },
       _react2.default.createElement(
-        "p",
+        'p',
         null,
-        "I am a Software Developer based in Edinburgh, currently open to employment opportunities having graduated from CodeClan's intensive PDA Software Development course (SCQF Level 8)."
+        'I am a Software Developer based in Edinburgh, currently open to employment opportunities having graduated from CodeClan\'s intensive PDA Software Development course (SCQF Level 8).'
       ),
       _react2.default.createElement(
-        "p",
+        'p',
         null,
-        "I bring a strong user-centred approach to development, and a genuine enthusiasm for delivering excellent user experience."
+        'I bring a strong user-centred approach to development, and a genuine enthusiasm for delivering excellent user experience.'
       ),
       _react2.default.createElement(
-        "p",
+        'p',
         null,
-        "Skills include: "
+        'Skills include: '
       ),
       _react2.default.createElement(
-        "ul",
+        'ul',
         null,
         _react2.default.createElement(
-          "li",
+          'li',
           null,
-          "Programming languages including JavaScript, Java, Ruby"
+          'Programming languages including JavaScript, Java, Ruby'
         ),
         _react2.default.createElement(
-          "li",
+          'li',
           null,
-          "Experience with frameworks including React and Ruby on Rails"
+          'Experience with frameworks including React and Ruby on Rails'
         ),
         _react2.default.createElement(
-          "li",
+          'li',
           null,
-          "Node JS, NPM, Webpack and Babel"
+          'Node JS, NPM, Webpack and Babel'
         ),
         _react2.default.createElement(
-          "li",
+          'li',
           null,
-          "Utilising and creating RESTful APIs"
+          'Utilising and creating RESTful APIs'
         ),
         _react2.default.createElement(
-          "li",
+          'li',
           null,
-          "SQL and noSQL database experience"
+          'SQL and noSQL database experience'
         ),
         _react2.default.createElement(
-          "li",
+          'li',
           null,
-          "Strong grounding in OOP and SOLID principles"
+          'Strong grounding in OOP and SOLID principles'
         ),
         _react2.default.createElement(
-          "li",
+          'li',
           null,
-          "Test Driven Development"
+          'Test Driven Development'
         )
       ),
       _react2.default.createElement(
-        "ul",
-        { className: "nav-links" },
+        'ul',
+        { className: 'nav-links' },
         _react2.default.createElement(
-          "li",
+          'li',
           null,
           _react2.default.createElement(
-            "a",
-            { href: "http://github.com/aitchiss" },
-            _react2.default.createElement("i", { className: "fa fa-github fa-2x", "aria-hidden": "true" })
+            'a',
+            { href: 'http://github.com/aitchiss' },
+            _react2.default.createElement('i', { className: 'fa fa-github fa-2x', 'aria-hidden': 'true' })
           )
         ),
         _react2.default.createElement(
-          "li",
+          'li',
           null,
           _react2.default.createElement(
-            "a",
-            { href: "https://www.linkedin.com/in/suzanne-aitchison-59aa2838/" },
-            _react2.default.createElement("i", { className: "fa fa-linkedin-square fa-2x", "aria-hidden": "true" })
+            'a',
+            { href: 'https://www.linkedin.com/in/suzanne-aitchison-59aa2838/' },
+            _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-2x', 'aria-hidden': 'true' })
           )
         ),
         _react2.default.createElement(
-          "li",
+          'li',
           null,
           _react2.default.createElement(
-            "a",
-            { href: "mailto:suzanne.aitchison@gmail.com" },
-            _react2.default.createElement("i", { className: "fa fa-envelope fa-2x", "aria-hidden": "true" })
+            'a',
+            { href: 'mailto:suzanne.aitchison@gmail.com' },
+            _react2.default.createElement('i', { className: 'fa fa-envelope fa-2x', 'aria-hidden': 'true' })
           )
         )
       )
     ),
     _react2.default.createElement(
-      "div",
-      { className: "grid-container" },
+      'div',
+      { className: 'grid-container' },
       _react2.default.createElement(
-        "div",
-        { className: "grid-header" },
+        'div',
+        { className: 'grid-header' },
         _react2.default.createElement(
-          "p",
+          'p',
           null,
-          "Key Projects"
+          'Key Projects'
         )
       ),
       projectDivs
@@ -22998,6 +22994,51 @@ var SlideImage = function SlideImage(props) {
 };
 
 exports.default = SlideImage;
+
+/***/ }),
+/* 192 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(25);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ProjectTile = function ProjectTile(props) {
+
+  var infoTags = props.tagInfo.map(function (tag, index) {
+    return _react2.default.createElement(
+      "p",
+      { className: "info-tag", key: index },
+      tag
+    );
+  });
+
+  return _react2.default.createElement(
+    "div",
+    { className: "project", onClick: props.moveToProject, id: props.reference },
+    _react2.default.createElement(
+      "p",
+      { onClick: props.moveToProject, id: props.reference },
+      props.name
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "project-hover" },
+      infoTags
+    )
+  );
+};
+
+exports.default = ProjectTile;
 
 /***/ })
 /******/ ]);

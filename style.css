@@ -85,9 +85,21 @@
   background-color: #EA1E63;
 }
 
+#animalShelter .project-hover{
+  border: 1px solid #F2719C;
+  color: white;
+  background-color: #F2719C;
+}
+
 #workoutPlanner{
   grid-area: workoutPlanner;
   background-color: #9C28B1;
+}
+
+#workoutPlanner .project-hover{
+  border: 1px solid #C772D6;
+  color: white;
+  background-color: #C772D6;
 }
 
 #workoutPlanner p{
@@ -99,9 +111,21 @@
   background-color: #00BCD5;
 }
 
+#iDrinkies .project-hover{
+  border: 1px solid #73DEED;
+  color: white;
+  background-color: #73DEED;
+}
+
 #hooses{
   grid-area: hooses;
   background-color: #019587;
+}
+
+#hooses .project-hover{
+  border: 1px solid #42B1A5;
+  color: white;
+  background-color: #42B1A5;
 }
 
 #starWars{
@@ -110,9 +134,21 @@
   width: 315px;
 }
 
+#starWars .project-hover{
+  border: 1px solid #FFDA67;
+  color: white;
+  background-color: #FFDA67;
+}
+
 #battleships {
   grid-area: battleships;
   background-color: #673BB7;
+}
+
+#battleships .project-hover{
+  border: 1px solid #A485DD;
+  color: white;
+  background-color: #A485DD;
 }
 
 
@@ -135,6 +171,29 @@
   color: white;
   text-align: center;
   border-radius: 5px;
+  position: relative;
+}
+
+.project-hover{
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.project-hover p{
+  margin-bottom: 0;
+  
+}
+
+.project:hover .project-hover {
+  opacity: 1;
 }
 
 .project p{
