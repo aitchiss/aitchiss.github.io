@@ -9,7 +9,7 @@ const ProjectTile = (props) => {
   return (
     <div className="project" onClick={props.moveToProject} id={props.reference} >
       <p onClick={props.moveToProject} id={props.reference}>{props.name}</p>
-      <div className="project-hover">
+      <div className="project-hover" onClick={props.moveToProject} id={props.reference}>
         {infoTags}
       </div>
     </div>

@@ -23032,7 +23032,7 @@ var ProjectTile = function ProjectTile(props) {
     ),
     _react2.default.createElement(
       "div",
-      { className: "project-hover" },
+      { className: "project-hover", onClick: props.moveToProject, id: props.reference },
       infoTags
     )
   );
