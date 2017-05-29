@@ -39,7 +39,12 @@ class Main extends React.Component{
       'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/starwars_main_view_bottom.png?raw=true',
       'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/starwars_mobile_view.png?raw=true'
       ]}, 
-      {name: 'battleships', reference: 'battleships', colour: '#673BB7', githubLink: 'https://github.com/aitchiss/battleships'}],
+      {name: 'battleships', reference: 'battleships', colour: '#673BB7', githubLink: 'https://github.com/aitchiss/battleships', photos: [
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/battleships_setup.png?raw=true',
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/battleships_game_start.png?raw=true',
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/battleships_mid_game2.png?raw=true',
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/battleships_mid_game1.png?raw=true'
+      ]}],
       currentSelection: null
     }
   }
