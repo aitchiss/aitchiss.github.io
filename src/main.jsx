@@ -18,9 +18,9 @@ class Main extends React.Component{
       ]}, 
       {name: 'android workout planner', reference: 'workoutPlanner', colour: '#9C28B1', githubLink: 'https://github.com/aitchiss/workout_planner', 
       photos: [
-      'https://github.com/aitchiss/workout_planner/blob/master/documentation/Screen%20Shot%202017-03-26%20at%2016.20.05.jpg?raw=true',
-      'https://github.com/aitchiss/workout_planner/blob/master/documentation/Screen%20Shot%202017-03-26%20at%2016.20.14.jpg?raw=true',
-      'https://github.com/aitchiss/workout_planner/blob/master/documentation/Screen%20Shot%202017-03-26%20at%2016.19.53.jpg?raw=true'
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/workout_planner_main_list.jpg?raw=true',
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/workout_planner_workout_view.jpg?raw=true',
+      'https://github.com/aitchiss/aitchiss.github.io/blob/master/images/workout_planner_play_workout.jpg?raw=true'
       ]}, 
       {name: 'iDrinkies', reference: 'iDrinkies', colour: '#00BCD5', githubLink: 'https://github.com/aitchiss/iDrinkies',
       photos: [
