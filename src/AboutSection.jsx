@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectTile from './ProjectTile'
+
 
 const AboutSection = (props) => {
 

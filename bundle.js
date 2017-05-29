@@ -9624,10 +9624,6 @@ var _react = __webpack_require__(25);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _ProjectTile = __webpack_require__(192);
-
-var _ProjectTile2 = _interopRequireDefault(_ProjectTile);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var AboutSection = function AboutSection(props) {
@@ -9639,10 +9635,10 @@ var AboutSection = function AboutSection(props) {
 
   var projectDivs = props.projects.map(function (project, index) {
     return _react2.default.createElement(
-      'div',
-      { className: 'project', onClick: moveToProject, id: project.reference, key: index },
+      "div",
+      { className: "project", onClick: moveToProject, id: project.reference, key: index },
       _react2.default.createElement(
-        'p',
+        "p",
         { onClick: moveToProject, id: project.reference },
         project.name
       )
@@ -9650,107 +9646,107 @@ var AboutSection = function AboutSection(props) {
   });
 
   return _react2.default.createElement(
-    'div',
-    { className: 'about-section' },
+    "div",
+    { className: "about-section" },
     _react2.default.createElement(
-      'div',
-      { className: 'about-text' },
+      "div",
+      { className: "about-text" },
       _react2.default.createElement(
-        'p',
+        "p",
         null,
-        'I am a Software Developer based in Edinburgh, currently open to employment opportunities having graduated from CodeClan\'s intensive PDA Software Development course (SCQF Level 8).'
+        "I am a Software Developer based in Edinburgh, currently open to employment opportunities having graduated from CodeClan's intensive PDA Software Development course (SCQF Level 8)."
       ),
       _react2.default.createElement(
-        'p',
+        "p",
         null,
-        'I bring a strong user-centred approach to development, and a genuine enthusiasm for delivering excellent user experience.'
+        "I bring a strong user-centred approach to development, and a genuine enthusiasm for delivering excellent user experience."
       ),
       _react2.default.createElement(
-        'p',
+        "p",
         null,
-        'Skills include: '
+        "Skills include: "
       ),
       _react2.default.createElement(
-        'ul',
+        "ul",
         null,
         _react2.default.createElement(
-          'li',
+          "li",
           null,
-          'Programming languages including JavaScript, Java, Ruby'
+          "Programming languages including JavaScript, Java, Ruby"
         ),
         _react2.default.createElement(
-          'li',
+          "li",
           null,
-          'Experience with frameworks including React and Ruby on Rails'
+          "Experience with frameworks including React and Ruby on Rails"
         ),
         _react2.default.createElement(
-          'li',
+          "li",
           null,
-          'Node JS, NPM, Webpack and Babel'
+          "Node JS, NPM, Webpack and Babel"
         ),
         _react2.default.createElement(
-          'li',
+          "li",
           null,
-          'Utilising and creating RESTful APIs'
+          "Utilising and creating RESTful APIs"
         ),
         _react2.default.createElement(
-          'li',
+          "li",
           null,
-          'SQL and noSQL database experience'
+          "SQL and noSQL database experience"
         ),
         _react2.default.createElement(
-          'li',
+          "li",
           null,
-          'Strong grounding in OOP and SOLID principles'
+          "Strong grounding in OOP and SOLID principles"
         ),
         _react2.default.createElement(
-          'li',
+          "li",
           null,
-          'Test Driven Development'
+          "Test Driven Development"
         )
       ),
       _react2.default.createElement(
-        'ul',
-        { className: 'nav-links' },
+        "ul",
+        { className: "nav-links" },
         _react2.default.createElement(
-          'li',
+          "li",
           null,
           _react2.default.createElement(
-            'a',
-            { href: 'http://github.com/aitchiss' },
-            _react2.default.createElement('i', { className: 'fa fa-github fa-2x', 'aria-hidden': 'true' })
+            "a",
+            { href: "http://github.com/aitchiss" },
+            _react2.default.createElement("i", { className: "fa fa-github fa-2x", "aria-hidden": "true" })
           )
         ),
         _react2.default.createElement(
-          'li',
+          "li",
           null,
           _react2.default.createElement(
-            'a',
-            { href: 'https://www.linkedin.com/in/suzanne-aitchison-59aa2838/' },
-            _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-2x', 'aria-hidden': 'true' })
+            "a",
+            { href: "https://www.linkedin.com/in/suzanne-aitchison-59aa2838/" },
+            _react2.default.createElement("i", { className: "fa fa-linkedin-square fa-2x", "aria-hidden": "true" })
           )
         ),
         _react2.default.createElement(
-          'li',
+          "li",
           null,
           _react2.default.createElement(
-            'a',
-            { href: 'mailto:suzanne.aitchison@gmail.com' },
-            _react2.default.createElement('i', { className: 'fa fa-envelope fa-2x', 'aria-hidden': 'true' })
+            "a",
+            { href: "mailto:suzanne.aitchison@gmail.com" },
+            _react2.default.createElement("i", { className: "fa fa-envelope fa-2x", "aria-hidden": "true" })
           )
         )
       )
     ),
     _react2.default.createElement(
-      'div',
-      { className: 'grid-container' },
+      "div",
+      { className: "grid-container" },
       _react2.default.createElement(
-        'div',
-        { className: 'grid-header' },
+        "div",
+        { className: "grid-header" },
         _react2.default.createElement(
-          'p',
+          "p",
           null,
-          'Key Projects'
+          "Key Projects"
         )
       ),
       projectDivs
@@ -23002,51 +22998,6 @@ var SlideImage = function SlideImage(props) {
 };
 
 exports.default = SlideImage;
-
-/***/ }),
-/* 192 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(25);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var ProjectTile = function ProjectTile(props) {
-
-  var infoTags = props.tagInfo.map(function (tag, index) {
-    return _react2.default.createElement(
-      "p",
-      { className: "info-tag", key: index },
-      tag
-    );
-  });
-
-  return _react2.default.createElement(
-    "div",
-    { className: "project", onClick: props.moveToProject, id: props.reference },
-    _react2.default.createElement(
-      "p",
-      { onClick: props.moveToProject, id: props.reference },
-      props.name
-    ),
-    _react2.default.createElement(
-      "div",
-      { className: "project-hover", onClick: props.moveToProject, id: props.reference },
-      infoTags
-    )
-  );
-};
-
-exports.default = ProjectTile;
 
 /***/ })
 /******/ ]);
