@@ -1,6 +1,6 @@
 import React from 'react'
-import ProjectHeading from './ProjectHeading'
-import ProjectContent from './ProjectContent'
+import ProjectHeading from './ProjectHeading.jsx'
+import ProjectContent from './ProjectContent.jsx'
 
 
 class ProjectSection extends React.Component{

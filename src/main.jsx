@@ -1,7 +1,8 @@
 import React from 'react'
-import Header from './Header'
-import AboutSection from './AboutSection'
-import ProjectSection from './ProjectSection'
+import ReactDOM from 'react-dom'
+import Header from './Header.jsx'
+import AboutSection from './AboutSection.jsx'
+import ProjectSection from './ProjectSection.jsx'
 
 class Main extends React.Component{
 
@@ -74,3 +75,6 @@ class Main extends React.Component{
 
 
 export default Main
+
+const wrapper = document.getElementById("app");
+wrapper ? ReactDOM.render(<Main />, wrapper) : false;

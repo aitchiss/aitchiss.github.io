@@ -1,25 +1,31 @@
-var config = {
-  entry: __dirname + '/src/app.js',
-  output: {
-    path: __dirname + '/',
-    filename: 'bundle.js'
-  },
-  devtool: "source-map",
-  resolve: {
-    extensions: ['.js', '.jsx']
-  },
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        exclude: /(node_modules)/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['react', 'es2015']
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
         }
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader"
+          }
+        ]
       }
     ]
+  },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: "./src/index.html",
+      filename: "./index.html"
+    })
+  ],
+  output: {
+    filename: '[name].[contenthash].js'
   }
 };
-
-module.exports = config

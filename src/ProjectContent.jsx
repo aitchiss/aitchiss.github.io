@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageArea from './ImageArea'
+import ImageArea from './ImageArea.jsx'
 
 class ProjectContent extends React.Component{
 

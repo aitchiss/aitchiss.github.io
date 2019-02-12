@@ -4,6 +4,8 @@
   font-size: 1.15em;
 }
 
+
+
 .top-header h1{
   font-family: 'Roboto Slab', serif;
 }
@@ -15,11 +17,13 @@
   color: white;
 }
 
+
 .top-header img{
   width: 140px;
   margin: 20px;
   border-radius: 100px;
 }
+
 
 .header-text{
   margin-right: 40px;

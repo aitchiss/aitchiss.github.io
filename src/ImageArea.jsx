@@ -1,5 +1,5 @@
 import React from 'react'
-import SlideImage from './SlideImage'
+import SlideImage from './SlideImage.jsx'
 
 class ImageArea extends React.Component{
 
