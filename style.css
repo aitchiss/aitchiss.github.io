@@ -39,12 +39,29 @@ header {
 .header-contact {
   align-self: end;
   justify-self: end;
-  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
 }
 
-.header-contact a {
+.email-link {
   color: white;
   font-size: 1.125rem;
+}
+
+.contact-icon {
+  float: right;
+  margin-left: 10px;
+  font-size: 2rem;  
+  color: white;
+}
+
+.contact-icons-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  justify-content: end; 
+  margin-bottom: -10px;
 }
 
 .general-details-container {
