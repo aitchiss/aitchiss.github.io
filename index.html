@@ -1,23 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab:700" rel="stylesheet">
-
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src="https://use.fontawesome.com/4915f7e77f.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <title>Suzanne Aitchison</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app"></div>
+  <header>
+    <div class="header-container">
+      <div class="header-main">
+        <h1>Suzanne Aitchison</h1>
+        <h2>Software Engineer</h2> 
+      </div>
+      <div class="header-contact">
+        <a href="mailto:suzanne.aitchison@gmail.com">suzanne.aitchison@gmail.com</a>
+      </div>
+    </div>
+  </header>
+  <section class="general-details">
+    <div class="general-details-container">
+      <div class="bio">
+        <h2 class="about-header">About</h2>
+        <p>I am a Software Engineer based in Edinburgh, currently working for Bemo Ltd - an agency specialising in mobile and responsive web development. I have a range of experience gained both inside and outside of work, with clients ranging from major UK brands to local community groups.</p>
+        <p>In addition to coding ability, I am a skilled communicator with a wealth of leadership experience.</p>
+      </div>
+      <div class="experience-checklist">
+        <h2 class="about-header">Primary areas of experience</h2>
+        <ul>
+          <li>Android native development, including Kotlin</li>
+          <li>React & Redux</li>
+          <li>UWP</li>
+          <li>Xamarin Forms</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="side-projects">
+    <div class="side-projects-container">
+      <h2 class="about-header">Recent side projects</h2>
+      <div class="project-detail">
+        <div class="project-desc">
+          <h3>Matt Peet Illustration: React</h3>
+          <a href="http://www.mattpeetillustration.com" target="_blank"><h4>www.mattpeetillustration.com</h4></a>
+          <p>Single page web application for local freelance illustrator. Created with React/Webpack; showcases key illustrations in a fully responsive UI.</p>
+        </div>
+        <div>
+          <img src="./images/mpeetillustration.png" class="project-image"/>
+        </div>
+      </div>
+      <div class="project-detail">
+        <div class="project-desc">
+          <h3>Auld Reekie Roller Derby: WordPress / PHP</h3>
+          <a href="http://auldreekierollerderby.com" target="_blank"><h4>auldreekierollerderby.com</h4></a>
+          <p>Custom WordPress theme, database fields, and website setup for local community group. Particular challenges in this project were to allow the group to easily customise the site and add data with little technical knowledge, and to create a web presence for their new branding.</p>
+        </div>
+        <div>
+          <img src="./images/arrd.png" class="project-image"/>
+        </div>
+      </div>
+      <div class="project-detail">
+        <div class="project-desc">
+          <h3>Workout Planner: Android</h3>
+          <a href="https://github.com/aitchiss/Capstone-Project" target="_blank"><h4>github.com/aitchiss/Capstone-Project</h4></a>
+          <p>Native Android app for planning and tracking workouts. Utilises Firebase Authentication, integrated with a Firebase Realtime database, and exercises API. This app was completed as the Capstone Project to a Udacity Nanodegree in Android Development.</p>
+        </div>
+        <div>
+          <img src="./images/workout_planner.png" class="project-image workout-planner-image"/>
+        </div>
+      </div>
+      <div class="project-detail">
+        <div class="project-desc">
+          <h3>Battleships / React</h3>
+          <a href="https://github.com/aitchiss/battleships" target="_blank"><h4>github.com/aitchiss/battleships</h4></a>
+          <p>A fun and simple 2 player battleships game made in React utilising socket.io for player connection.</p>
+        </div>
+        <div>
+          <img src="./images/battleships.png" class="project-image"/>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script type="text/javascript" src="main.a7651d323d10c66cca3f.js"></script></body>
+</body>
 </html>

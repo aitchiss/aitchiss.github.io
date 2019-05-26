@@ -1,234 +1,100 @@
-#app{
-  font-family: 'Raleway', sans-serif;
-  background-color: #ECEFF1;
-  font-size: 1.15em;
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #F5F5F6;
+  color: #37474f;
 }
 
-
-
-.top-header h1{
-  font-family: 'Roboto Slab', serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
 }
 
-.top-header{
-  display: flex;
-  justify-content: center;
-  background-color: #263238;
-  color: white;
-}
-
-
-.top-header img{
-  width: 140px;
-  margin: 20px;
-  border-radius: 100px;
-}
-
-
-.header-text{
-  margin-right: 40px;
-  margin-top: 35px;
-}
-
-.nav-links{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 30px;
-}
-
-.nav-links img{
-  width: 30px;
-  margin: 10px;
-  margin-top: 5px;
-}
-.nav-links li a{
-  color: #263238;
-  margin-right: 20px;
-}
-
-
-.about-section{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  justify-content: space-around;
-  background-color: white;
-  width: 90%;
-  margin: auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-
-.about-text{
-  width: 500px;
-}
-
-
-.grid-header{
-  
-  font-size: 1.5em;
-  grid-area: header;
-  border: 2px solid  #0277BD;
-  font-weight: bold;
-  color: #0277BD;
-  width: 315px;
-  border-radius: 5px;
-}
-
-.grid-header p{
-  margin-top: 40px;
-  text-align: center;
-}
-
-#animalShelter{
-  grid-area: animalShelter;
-  background-color: #EA1E63;
-}
-
-#workoutPlanner{
-  grid-area: workoutPlanner;
-  background-color: #9C28B1;
-}
-
-#workoutPlanner p{
-  margin-top: 40px;
-}
-
-#iDrinkies{
-  grid-area: iDrinkies;
-  background-color: #00BCD5;
-}
-
-#hooses{
-  grid-area: hooses;
-  background-color: #019587;
-}
-
-#starWars{
-  grid-area: starWars;
-  background-color: #FEC107;
-  width: 315px;
-}
-
-#battleships {
-  grid-area: battleships;
-  background-color: #673BB7;
-}
-
-.grid-container{
-  display: grid;
-  grid-gap: 10px 5px;
-  grid-template-areas: 
-      "header header workoutPlanner"
-      "battleships iDrinkies animalShelter"
-      "hooses starWars starWars";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: [row1-start] 120px [row1-end] 120px [third-line] 120px;
-}
-
-
-.project{
-  height: 120px;
-  width: 150px;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  position: relative;
-  cursor: pointer;
-}
-
-.project-hover{
-  opacity: 0;
+header {
+  background: #009688;
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  position: absolute;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.project-hover p{
-  margin-bottom: 0;
-
-}
-
-.project:hover .project-hover {
-  opacity: 1;
-}
-
-.project p{
-  margin-top: 50px;
-}
-
-
-.project-heading{
-  font-family: 'Roboto Slab', serif;
+  margin: 0;
   color: white;
-  text-align: center;
-  height: 100px;
-  padding-top: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#project-view{
-  height: 1200px;
+.about-header {
+  color: #00675b;
+  font-weight: 700;
 }
 
-.project-content{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: auto;
-  width: 90%;
-  background-color: white;
-  padding-bottom: 100px;
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.images{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  
-  background-color: white;
+@media only screen and (min-width: 600px) and (orientation: landscape) {
+  .header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-#carousel-project-images{
-  height: 300px;
+.header-contact {
+  align-self: end;
+  justify-self: end;
+  padding-bottom: 20px;
 }
 
-.images p{
-  margin-top: 40px;
+.header-contact a {
+  color: white;
+  font-size: 1.125rem;
 }
 
-.project-info-text{
-  padding-top: 40px;
-  width: 500px;
+.general-details-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 25px;
 }
 
-
-.carousel-control.left{
-  background: none !important
+@media only screen and (min-width: 600px) and (orientation: landscape) {
+  .general-details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-.carousel-control.right{
-  background: none !important
+@media only screen and (min-width: 600px) and (orientation: landscape) {
+  .experience-checklist {
+    padding-left: 25px;
+  }
 }
 
-
-.item img{
-  max-height: 260px;
-  margin: auto;
+.side-projects-container {
+  padding: 25px;
 }
 
+.project-detail {
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
+.project-desc {
+  padding: 20px;
+}
 
+@media only screen and (min-width: 600px) and (orientation: landscape) {
+  .project-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-image {
+  max-width: 100%;
+}
+
+.workout-planner-image {
+  max-width: 50%;
+  margin-left: 25%;
+}
