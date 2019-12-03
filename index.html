@@ -4,88 +4,77 @@
   <title>Suzanne Aitchison</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style-v101.css">
+  <link rel="stylesheet" href="style-v102.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <header>
+    <div class="backing"></div>
+    <div class="triangle-left" ></div>
+    <div class="triangle-final"></div>
+    <div class="triangle-right"></div>
     <div class="header-container">
       <div class="header-main">
         <h1>Suzanne Aitchison</h1>
-        <h2>Software Engineer</h2> 
+        <h2>Software Developer</h2> 
       </div>
-      <div class="header-contact">
-        <a class="email-link" href="mailto:suzanne.aitchison@gmail.com">suzanne.aitchison@gmail.com</a>
-        <div class="contact-icons-grid">
-          <p><a href="https://www.linkedin.com/in/suzanne-aitchison-59aa2838/" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a></p>
-          <p><a href="https://github.com/aitchiss" target="_blank" class="contact-icon"><i class="fab fa-github"></i></a></p>
-        </div>
-      </div>
+      <a href="https://www.linkedin.com/in/suzanne-aitchison-59aa2838/" aria-label="Linked In Profile" class="contact-icon">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a href="https://github.com/aitchiss" aria-label="Github Profile" class="contact-icon">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
     </div>
   </header>
   <section class="general-details">
     <div class="general-details-container">
       <div class="bio">
         <h2 class="about-header">About</h2>
-        <p>I am a Software Engineer based in Edinburgh, currently working for Bemo Ltd - an agency specialising in mobile and web development. I have a range of experience gained both inside and outside of work, having worked with clients ranging from major UK brands to local community groups.</p>
-        <p>My technical qualifications include a Professional Development Award in Software Development, and a Udacity Nanodegree in Android Development. I also have a wealth of leadership experience, and hold an ILM Level 3 Award in Leadership and Management.</p>
+        <p>I am a Software Developer based in Edinburgh, currently working for Nucleus Financial, specialising in React development.</p>
+        <p>I am also the creator and maintainer of <a href="https://www.upyoura11y.com">Up Your A11y</a>, a resource for web developers to find useful information on how to make web apps more accessible, particularly focusing on Single Page Applications made in React.</p>
+        <p>I also <a href="https://dev.to/s_aitchison">blog regularly on DEV</a>, and <a href="https://dev.to/s_aitchison/my-a11y-hacktoberfest-retro-34op">contribute to Open Source projects</a>, particularly with the aim of helping audit and solve acccessibility issues.</p>
       </div>
       <div class="experience-checklist">
-        <h2 class="about-header">Primary areas of experience</h2>
-        <ul>
-          <li>Android native development, including Kotlin</li>
-          <li>React & Redux</li>
-          <li>UWP</li>
-          <li>Xamarin Forms</li>
+        <h2 class="about-header">Recent blog posts</h2>
+        <ul class="no-decoration-list">
+          <li>
+            <a href="https://dev.to/s_aitchison/how-should-keyboard-navigation-work-in-web-applications-5455" aria-label="How Should Keyboard Navigation Work in Web Applications?">
+              <div class="blog-entry">
+                <div class="color-block"></div>
+                <p>How Should Keyboard Navigation Work in Web Applications?</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://dev.to/s_aitchison/page-titles-and-a11y-in-single-page-applications-esp-react-vue-4ok8"
+              aria-label="Page Titles and A11y in Single Page Applications">
+              <div class="blog-entry">
+                <div class="color-block"></div>
+                <p>Page Titles and A11y in Single Page Applications</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://dev.to/s_aitchison/handling-route-changes-in-react-accessibly-44fn"
+              aria-label="Handling Route Changes in React, Accessibly">
+              <div class="blog-entry">
+                <div class="color-block"></div>
+                <p>Handling Route Changes in React, Accessibly</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://dev.to/s_aitchison/3-quick-tasks-to-get-familiar-with-screen-readers-voiceover-on-mac-1cig"
+              aria-label="3 Quick Tasks to Get Familiar with Screen Readers (VoiceOver on Mac)">
+              <div class="blog-entry">
+                <div class="color-block"></div>
+                <p>3 Quick Tasks to Get Familiar with Screen Readers (VoiceOver on Mac)</p>
+              </div>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </section>
-  <section class="side-projects">
-    <div class="side-projects-container">
-      <h2 class="about-header">Recent side projects</h2>
-      <div class="project-detail">
-        <div class="project-desc">
-          <h3>Matt Peet Illustration: React</h3>
-          <a href="http://www.mattpeetillustration.com" target="_blank"><h4>www.mattpeetillustration.com</h4></a>
-          <p>Single page web application for local freelance illustrator. Created with React/Webpack; showcases key illustrations in a fully responsive UI.</p>
-        </div>
-        <div>
-          <img src="./images/mpeetillustration.png" class="project-image" alt="Matt Peet Illustration Home Page"/>
-        </div>
-      </div>
-      <div class="project-detail">
-        <div class="project-desc">
-          <h3>Auld Reekie Roller Derby: WordPress / PHP</h3>
-          <a href="http://auldreekierollerderby.com" target="_blank"><h4>auldreekierollerderby.com</h4></a>
-          <p>Custom WordPress theme, database fields, and website setup for local community group. Particular challenges in this project were to allow the group to easily customise the site and add data with little technical knowledge, and to create a web presence for their new branding.</p>
-        </div>
-        <div>
-          <img src="./images/arrd.png" class="project-image" alt="Auld Reekie Roller Derby Home Page"/>
-        </div>
-      </div>
-      <div class="project-detail">
-        <div class="project-desc">
-          <h3>Workout Planner: Android</h3>
-          <a href="https://github.com/aitchiss/Capstone-Project" target="_blank"><h4>github.com/aitchiss/Capstone-Project</h4></a>
-          <p>Native Android app for planning and tracking workouts. Utilises Firebase Authentication, integrated with a Firebase Realtime database, and exercises API. This app was completed as the Capstone Project to a Udacity Nanodegree in Android Development.</p>
-        </div>
-        <div>
-          <img src="./images/workout_planner.png" class="project-image workout-planner-image" alt="Screenshot of Workout Planner's Exercise Builder"/>
-        </div>
-      </div>
-      <div class="project-detail">
-        <div class="project-desc">
-          <h3>Battleships: React</h3>
-          <a href="https://github.com/aitchiss/battleships" target="_blank"><h4>github.com/aitchiss/battleships</h4></a>
-          <p>A fun and simple 2 player battleships game made in React utilising socket.io for player connection.</p>
-        </div>
-        <div>
-          <img src="./images/battleships.png" class="project-image" alt="Screenshot of in-progress Battleships game"/>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </body>
 </html>
