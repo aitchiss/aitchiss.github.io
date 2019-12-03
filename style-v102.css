@@ -116,6 +116,6 @@ p {
 
 .color-block {
   background: pink;
-  width: 15px;
+  min-width: 15px;
   margin-right: 10px;
 }
